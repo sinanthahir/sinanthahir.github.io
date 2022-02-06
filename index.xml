@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sin(x)</title>
+    <link>https://sinanthahir.github.io/</link>
+    <description>Recent content on Sin(x)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>One Hundread Days of Solitude</title>
+      <link>https://sinanthahir.github.io/bookshelf/100solitude/</link>
+      <pubDate>Fri, 04 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/bookshelf/100solitude/</guid>
+      <description>&lt;h1 id=&#34;heay-alll&#34;&gt;heay alll&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Business Metrics - Be the Unicorn</title>
+      <link>https://sinanthahir.github.io/blogs/data-analyst-roadmap/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/blogs/data-analyst-roadmap/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/functions/emojify/&#34;&gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;&gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To enable emoji globally, set &lt;code&gt;enableEmoji&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your site&amp;rsquo;s &lt;a href=&#34;https://gohugo.io/getting-started/configuration/&#34;&gt;configuration&lt;/a&gt; and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nerd Stuff</title>
+      <link>https://sinanthahir.github.io/nerd-stuff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/nerd-stuff/</guid>
+      <description>&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;🎯 Ghoul mode &lt;a href=&#34;https://t.co/lTcFq0gnEn&#34;&gt;pic.twitter.com/lTcFq0gnEn&lt;/a&gt;&lt;/p&gt;&amp;mdash; sin(x) (@sinanthahir) &lt;a href=&#34;https://twitter.com/sinanthahir/status/1463368790155018252?ref_src=twsrc%5Etfw&#34;&gt;November 24, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>
