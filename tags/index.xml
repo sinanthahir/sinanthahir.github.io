@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Analytics</title>
+      <link>https://sinanthahir.github.io/tags/analytics/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Business Analytics</title>
       <link>https://sinanthahir.github.io/tags/business-analytics/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
@@ -17,11 +26,11 @@
     </item>
     
     <item>
-      <title>index</title>
-      <link>https://sinanthahir.github.io/tags/index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Data Science</title>
+      <link>https://sinanthahir.github.io/tags/data-science/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://sinanthahir.github.io/tags/index/</guid>
+      <guid>https://sinanthahir.github.io/tags/data-science/</guid>
       <description></description>
     </item>
     

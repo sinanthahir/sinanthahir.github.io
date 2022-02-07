@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Itiha 2k18</title>
+      <link>https://sinanthahir.github.io/works/itiha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/works/itiha/</guid>
+      <description>&lt;p&gt;nafbyayfh&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>One Hundread Days of Solitude</title>
       <link>https://sinanthahir.github.io/bookshelf/100solitude/</link>
       <pubDate>Fri, 04 Feb 2022 00:00:00 +0000</pubDate>
@@ -59,9 +69,13 @@
 &lt;li&gt;&lt;a href=&#34;https://open.spotify.com/show/5HZ9y88I43ba7pO5S3K9nM&#34;&gt;Indian Silicon Valley - Jivraj Singh Sachar&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://open.spotify.com/show/0HwNbH4waHN5c3xaFr2TQO?si=444eb499c83c4258&#34;&gt;The Mallu Show - Rizwan Ramzan&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Drop one of your favorite podcast here!&lt;/p&gt;&amp;mdash; sin(x) (@sinanthahir) &lt;a href=&#34;https://twitter.com/sinanthahir/status/1490371468626391040?ref_src=twsrc%5Etfw&#34;&gt;February 6, 2022&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
+&lt;h3 id=&#34;favourite-anime--series&#34;&gt;Favourite Anime &amp;amp; Series&lt;/h3&gt;
+&lt;h2 id=&#34;about-the-site&#34;&gt;About the Site&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The site was built using &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, &lt;a href=&#34;https://tailwindcss.com/&#34;&gt;Tailwind CSS&lt;/a&gt;, &lt;a href=&#34;https://github.com/PrismJS/prism&#34;&gt;PrismJS&lt;/a&gt;  and deployed on &lt;a href=&#34;https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#user--organization-pages&#34;&gt;Github Pages&lt;/a&gt;. All the theme design development was done by &lt;a href=&#34;https://github.com/kaiiiz&#34;&gt;Kai Zheng&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     
