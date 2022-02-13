@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Sin(x)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analytics</title>
       <link>https://sinanthahir.github.io/tags/analytics/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://sinanthahir.github.io/tags/analytics/</guid>
       <description></description>
@@ -19,7 +19,7 @@
     <item>
       <title>Business Analytics</title>
       <link>https://sinanthahir.github.io/tags/business-analytics/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://sinanthahir.github.io/tags/business-analytics/</guid>
       <description></description>
@@ -28,9 +28,72 @@
     <item>
       <title>Data Science</title>
       <link>https://sinanthahir.github.io/tags/data-science/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://sinanthahir.github.io/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EDA</title>
+      <link>https://sinanthahir.github.io/tags/eda/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/eda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AI</title>
+      <link>https://sinanthahir.github.io/tags/ai/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AR</title>
+      <link>https://sinanthahir.github.io/tags/ar/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/ar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://sinanthahir.github.io/tags/research/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>https://sinanthahir.github.io/tags/tech/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automotive</title>
+      <link>https://sinanthahir.github.io/tags/automotive/</link>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/automotive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ML</title>
+      <link>https://sinanthahir.github.io/tags/ml/</link>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/ml/</guid>
       <description></description>
     </item>
     

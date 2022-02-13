@@ -1,0 +1,465 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="h-full w-full font-sans" lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://sinanthahir.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Experience Analysis through Weather Data : Exploratory Data Analysis - Sin(x)</title>
+
+    
+    <meta name="description" content="Knowing accurate weather conditions is an important element for individuals as well as organizations. Many businesses rely on weather conditions. It is necessary to have the correct data to get accurate decisions. " />
+    
+
+    
+
+    
+    <meta name="author" content="Sinan Thahir" />
+    
+
+    
+        <meta property="og:title" content="Experience Analysis through Weather Data : Exploratory Data Analysis" />
+<meta property="og:description" content="Knowing accurate weather conditions is an important element for individuals as well as organizations. Many businesses rely on weather conditions. It is necessary to have the correct data to get accurate decisions. " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sinanthahir.github.io/blogs/exp-weather-eda/" /><meta property="og:image" content="https://sinanthahir.github.io/blogs/exp-weather-eda/cover.png"/><meta property="article:section" content="blogs" />
+<meta property="article:published_time" content="2021-11-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-11-01T00:00:00+00:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sinanthahir.github.io/blogs/exp-weather-eda/cover.png"/>
+<meta name="twitter:title" content="Experience Analysis through Weather Data : Exploratory Data Analysis"/>
+<meta name="twitter:description" content="Knowing accurate weather conditions is an important element for individuals as well as organizations. Many businesses rely on weather conditions. It is necessary to have the correct data to get accurate decisions. "/>
+
+    <link rel="stylesheet" href="/css/styles.min.7a1a61a7e69df7aaa60ca4572a6699f3e3751b22d1fd887eda416ab14a9175a618aea8fcf4180c2620f455e7181d55667e6572cdf0807e1bec4138d0228da709.css" integrity="sha512-ehphp+ad96qmDKRXKmaZ8+N1GyLR/Yh+2kFqsUqRdaYYrqj89BgMJiD0VecYHVVmfmVyzfCAfhvsQTjQIo2nCQ==">
+
+
+
+    
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head><body class="flex flex-col items-center w-full">
+        <main class="w-full sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-5/12 m-auto px-6"><header class="mt-9 mb-8">
+    <div class="flex justify-between items-center">
+        <div class="flex items-center">
+            <input id="navbar_btn" class="hidden" type="checkbox">
+            <label for="navbar_btn" class="menu-btn mr-4 items-center flex xl:hidden">
+                <span class="navicon"></span>
+            </label>
+            <a href="/" class="font-bold text-lg xl:text-2xl mr-auto">Sin(x)</a>
+        </div>
+
+        <div class="flex items-center">
+            <div class="cursor-pointer ml-2">
+                <svg id="dark_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg></svg>
+                <svg id="light_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><g><path d="M14,2c1.82,0,3.53,0.5,5,1.35C16.01,5.08,14,8.3,14,12s2.01,6.92,5,8.65C17.53,21.5,15.82,22,14,22C8.48,22,4,17.52,4,12 S8.48,2,14,2z"/></g></g></g></svg></svg>
+            </div>
+
+            
+
+            
+                <div class="ml-2 sep hidden sm:block"></div>
+                <div class="ml-2 relative flex items-center">
+                    <svg id="search_btn" class="cursor-pointer" width="18px" height="18px" viewBox="2 0 20 20"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></svg><div id="search_menu_wrapper" class="hidden justify-center fixed top-0 left-0 w-full h-full z-40">
+    <div id="search_menu" class="fixed flex flex-col w-full h-full sm:h-auto sm:top-24 sm:bottom-24 rounded-none sm:rounded-md sm:w-120 z-50">
+        <div class="flex min-h-10 shadow-md">
+            <div class="flex flex-grow">
+                <input id="search_menu_input" class="flex-grow focus:outline-none px-4 rounded-tl-md" type="text" placeholder=
+                Search&#32;Posts>
+            </div>
+            <div id="search_menu_close_btn" class="flex items-center justify-center w-10 rounded-tr-md cursor-pointer">
+                <svg width="14px" height="14px" viewBox="3 3 18 18"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></svg>
+            </div>
+        </div>
+        <div id="search_menu_results" class="flex-grow overflow-y-auto">
+        </div>
+    </div>
+</div>
+</div>
+            
+        </div>
+    </div>
+
+    <nav id="navbar" class="mt-3 hidden xl:block"><ul class="flex"><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/about/">About</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium insection">
+                        <a href="/blogs/">Blogs</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/bookshelf/">Bookshelf</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/nerd-stuff/">Nerd Stuff</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/timeline/">Timeline</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/works/">Works</a>
+                    </li></ul>
+    </nav>
+
+    <nav id="navbar_sm" class="mt-2 hidden">
+        <ul>
+            
+                <li class="text-sm mt-2">
+                    <a href="/about/">About</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/blogs/">Blogs</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/bookshelf/">Bookshelf</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/nerd-stuff/">Nerd Stuff</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/timeline/">Timeline</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/works/">Works</a></li>
+            
+        </ul>
+
+        <hr class="my-4">
+    </nav>
+</header>
+<div id="content" class="my-8">
+                
+
+    <div class="my-7">
+<article >
+    <h2 id="experience-analysis-through-weather-data--exploratory-data-analysis">Experience Analysis through Weather Data : Exploratory Data Analysis</h2>
+<p><img src="cover.png" alt="image"></p>
+<p>Knowing accurate weather conditions is an important element for individuals as well as organizations. Many businesses rely on weather conditions. It is necessary to have the correct data to get accurate decisions. One type of data that’s easier to find on the internet is Weather data. Many sites provide historical data on many meteorological parameters.</p>
+<p>Exploratory Data Analysis is an approach to analyze data, to summarize the main characteristics of data, and better understand the data set. It also allows us to quickly interpret the data and adjust different variables to see their effect. The three main steps to get a perfect EDA are <code>extracting</code> the data from an authorized source, <code>cleaning</code> and <code>processing</code> the data, and performing data <code>visualization</code> on the cleaned data set.</p>
+<p>Here, I will work through out a practical exploratory data analysis which was done a part of my data analytics internship at <a href="https://suvenconsultants.com/">Suven Consultants &amp; Technology</a>.</p>
+<h3 id="objective">Objective:</h3>
+<p>The main focus of our project was to perform analysis for testing the Influences of Global Warming and finally put forth a conclusion.</p>
+<h3 id="hypothesis">Hypothesis:</h3>
+<p>A hypothesis is an assumption, an idea that is proposed for the sake of argument so that it can be tested to see if it might be true.
+
+
+
+
+
+
+    
+    
+
+
+<div class="rounded p-3 my-6" style="background-color: #d9edf7; color: #31708f;" >
+    
+The Null Hypothesis H0 is “Has the Apparent temperature and humidity compared monthly across 10 years of the data indicate an increase due to Global warming”
+
+</div>
+
+That means we need to find whether the average Apparent temperature for the month of a month says April starting from 2006 to 2016 and the average humidity for the same period have increased or not.</p>
+<blockquote>
+<p>So, What is this Apparent Temperature and Humidity mentioned in the Null Hypothesis (H0)?</p>
+</blockquote>
+<p>These are called Terminologies, or rather say the column names or criteria used to constrain the data we have to different specification or class. In order to know that we must look up for basic terminologies used in the data we are working on.</p>
+<h3 id="terminologies">Terminologies:</h3>
+<p><strong>Meteorological Data</strong> refers to data consisting of physical parameters that are measured directly by instrumentation, and include temperature, dew point, wind direction, wind speed, cloud cover, cloud layer(s), ceiling height, visibility, current weather, and precipitation amount.</p>
+<p><strong>Apparent temperature</strong> is the temperature equivalent perceived by humans, caused by the combined effects of air temperature, relative humidity, and wind speed. The measure is most commonly applied to the perceived outdoor temperature.</p>
+<p><strong>Humidity</strong> is the amount of water vapor in the air. If there is a lot of water vapor in the air, the humidity will be high. The higher the humidity, the wetter it feels outside.</p>
+<blockquote>
+<p>You can check out more weather terminologies from <a href="https://kestrelmeters.com/pages/weather-glossary">Kestrelmeter’s Glossary</a>.</p>
+</blockquote>
+<h3 id="dataset">Dataset:</h3>
+<p>The dataset currently using, can be obtained from <a href="https://www.kaggle.com/muthuj7/weather-dataset">Kaggle</a>. The dataset has hourly temperature recorded for the last 10 years starting from 2006–04–01 00:00:00.000 +0200 to 2016–09–09 23:00:00.000 +0200. It corresponds to Finland, a country in Northern Europe.</p>
+<blockquote>
+<p>Now, we have our Objective, Dataset, and basic understanding of the Terminologies. So let’s start of journey to analyze the data!</p>
+</blockquote>
+<h3 id="data-preprocessing">Data Preprocessing</h3>
+<p>Here, i’m using Anaconda Environment with Visual Studio Code. You can also set up such a system which enable a faster git and pipeline integration.</p>
+<h4 id="importing-required-libraries">Importing required libraries:</h4>
+<p>We will be using Python libraries such as Pandas, Numpy, Matplotlib and Seaborn.</p>
+<pre tabindex="0"><code>import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+</code></pre><h4 id="loading-dataset">Loading dataset:</h4>
+<p>Load the dataset using <code>read_csv()</code> function as the dataset is in CSV form and read the first 5 rows from data using <code>head()</code> function.</p>
+<pre tabindex="0"><code>data = pd.read_csv('weatherHistory.csv')
+data.head()
+</code></pre><p><img src="01.png" alt="image"></p>
+<p><strong>Dimensions</strong> of the dataframe refers to the overall data sample, i.e, the total number of rows and columns in the data. It can be obtained using <code>data.shape</code> function as follows</p>
+<pre tabindex="0"><code>data.shape
+</code></pre><p>The total number of rows and columns in the data set is <strong>96453</strong> and <strong>12</strong> respectively.</p>
+<p>To find out the types and overall summary of the data frame, we use the <code>data.info()</code> function. It comes in handy when doing exploratory analysis of the data.</p>
+<pre tabindex="0"><code>data.info()
+</code></pre><p><img src="00.png" alt="info_output"></p>
+<p>We can use the <code>describe()</code> function to get the descriptive statistical details of the data-frame.</p>
+<pre tabindex="0"><code>data.describe()
+</code></pre><p><img src="03.png" alt="stat"></p>
+<p>To check the distinct elements in the data frame, we can use the <code>nunique()</code> function.</p>
+<pre tabindex="0"><code>data.nunique()
+</code></pre><p><img src="04.png" alt="nunique"></p>
+<p>We can check for any missing values using the <code>isnull()</code> function. since having a large dataset, we can incorporate <code>sum()</code> function to get the total number of missing value in each columns.</p>
+<pre tabindex="0"><code>data.isnull().sum()
+</code></pre><p><img src="05.png" alt="isnull"></p>
+<p>Till now, we had got up many details about the dataset we are working on. Lets take it into account.</p>
+<h3 id="observations">Observations:</h3>
+<ol>
+<li>In ‘<em>Precip Type</em>’, there are 517 missing values.</li>
+<li>‘<em>Wind Bearing (degrees)</em>’ has only integer values.</li>
+<li><strong>Formatted Date</strong> is in String.</li>
+<li>Minimum values of Humidity, Wind Speed (km/h), Wind Bearing (degrees), Visibility (km) are <strong>Zero</strong> and they can be <strong>Zero</strong>.</li>
+<li>From Statistical details and Distinct Elements in Dataframe, It is noticed that ’Loud Cover’ are <strong>zero</strong> or <strong>null</strong>.</li>
+</ol>
+<p>We can <em>remove the unwanted columns</em> which don’t add value to the analysis using the <strong>drop()</strong> function. We will drop ‘Loud Cover’ as it has one unique value 0 and it is not useful in analysis.</p>
+<pre tabindex="0"><code>data = data.drop([‘Loud Cover’], axis = 1)
+</code></pre><h3 id="correlation-of-the-columns">Correlation of the Columns:</h3>
+<p>Correlation matrices are an essential tool of exploratory data analysis. We can display the pairwise correlation using <code>corr()</code> function which creates the correlation matrix between all the features in the dataset. <strong>Correlation heatmaps</strong> contain the same information in a visually appealing way.</p>
+<pre tabindex="0"><code># assign data correlation matrix
+relation = data.corr()
+
+# Increase the size of the heatmap
+plt.figure(figsize=(10,8))
+
+# Store heatmap object in a variable to easily access it
+when you want to include more features and you can set 
+the annotation parameter to True to display the 
+correlation values on the heatmap.
+sns.heatmap(data=relation)
+
+# Give a title to the heatmap.
+plt.title(&quot;Correlation of columns in the dataframe&quot;)
+
+# save the figure.
+plt.savefig('plot1.png', dpi=300, bbox_inches='tight')
+plt.show()
+</code></pre><p><img src="06.png" alt="heatmap"></p>
+<h3 id="observation">Observation:</h3>
+<p>From the Pairwise correlation chart, we can see that <em>Apparent Temperature</em> and <em>Humidity</em> have a high degree of correlation with each other. So we have a high chance of validating our hypothesis.</p>
+<p>We only need 3 columns for checking and validating our task which is data <strong>[‘Formatted Date’, ‘Apparent Temperature(c)’, ‘Humidity’]</strong>. So, we can ignore other columns and missing values.</p>
+<h3 id="parsing-dates-creating-new-dataframe-">Parsing Dates, Creating new dataframe :</h3>
+<p>Change the ‘Formatted Date’ feature from String to Datetime using the <code>datetime()</code> function.</p>
+<pre tabindex="0"><code>data[‘Formatted Date’] = pd.to_datetime(data[‘Formatted Date’],utc=True)
+</code></pre><p>We can set “Formatted Date” as an index using the <code>set_index()</code> function which sets the DataFrame index (row labels) using one or more existing columns.</p>
+<pre tabindex="0"><code>data = data.set_index(“Formatted Date”)
+data.info()
+</code></pre><p><img src="07.png" alt="parsed"></p>
+<h3 id="resampling-data">Resampling Data:</h3>
+<p><strong>Resampling</strong> is a convenient method for frequency conversion. The object must have a datetime like an index.</p>
+<p>Now, we have hourly data, we need to resample it to monthly. We only require the Apparent Temperature and humidity columns to test the hypothesis. So, we will consider these two columns and perform a <code>resample()</code> function from Pandas.</p>
+<pre tabindex="0"><code>df_column = ['Apparent Temperature (C)', 'Humidity']
+df_monthly_mean = data[df_column].resample(&quot;MS&quot;).mean() 
+#MS-Month Starting
+df_monthly_mean.head()
+</code></pre><p>Now, we converts hourly data to monthly data using “<strong>MS</strong>” which denotes the Month starting. We are displaying the average apparent temperature and humidity using the <strong>mean()</strong> function.</p>
+<p><img src="08.png" alt="resample"></p>
+<blockquote>
+<p>We are done with cleaning and resampling it. Now, Lets begin our analysis.</p>
+</blockquote>
+<h2 id="relation-between-apparent-temperature--humidity-using-regression">Relation between Apparent Temperature &amp; Humidity Using Regression:</h2>
+<p>We can use the <code>regplot()</code> function to plot the relationship between the “Apparent Temperature ” and “Humidity”.</p>
+<pre tabindex="0"><code># calling regplot function and assign it with our data and plot labels and color parameter.
+sns.regplot(data=df_monthly_mean, x=&quot;Apparent Temperature (C)&quot;, y=&quot;Humidity&quot;, color=&quot;r&quot;)
+
+# Give a title to the plot
+plt.title(&quot;Relation between Apparent Temperature (C) and Humidity&quot;)
+
+# save the figure
+plt.savefig('plot2.png', dpi=300, bbox_inches='tight')
+plt.show()
+</code></pre><p><img src="09.png" alt="regplot"></p>
+<h3 id="observation-1">Observation:</h3>
+<p>There is a Linear Relation between “<em>Apparent Temperature</em> ” and “<em>Humidity</em>” with a <strong>negative</strong> slope.</p>
+<p><em>As air temperature increases, air can hold more water molecules, and its relative humidity decreases. When temperatures drop, relative humidity increases.</em></p>
+<h2 id="yearly-variation-of-apparent-temperature-and-humidity">Yearly Variation of Apparent Temperature and Humidity:</h2>
+<p>We use <code>lineplot()</code> function to plot the Variation of Apparent Temperature and Humidity with time.</p>
+<pre tabindex="0"><code>plt.figure(figsize=(15,7))
+sns.lineplot(data= df_monthly_mean)
+plt.xlabel('year')
+plt.title('Variation of Apparent Temprature and HUmidity with Time')
+plt.savefig('plot3.png', dpi=300, bbox_inches='tight')
+plt.show()
+</code></pre><p><img src="10.png" alt="var"></p>
+<p>The above graph displays average temperature and humidity for all 12 months over the 10 years i.e., from 2006 to 2016.</p>
+<h3 id="observation-2">Observation:</h3>
+<ol>
+<li>“<em>Humidity</em>” remained constant from 2006–2016</li>
+<li>“<em>Apparent Temperature</em>” changed from 2006–2016 at regular intervals with constant amplitude.</li>
+</ol>
+<h2 id="variation-of-humidity--apparent-temperature-for-all-months">Variation of Humidity &amp; Apparent Temperature for all months:</h2>
+<p>Creating a function which labels each month number with actual <strong>month name</strong> and a <em>specified color</em> for graph. and defining a seaborn <code>plot()</code> function. This function helps to analyze the variations in Apparent Temperature and Humidity for all months over the 10 years.</p>
+<pre tabindex="0"><code># Defining a function call for month to be labeled
+def label_color(month):
+    if month == 1:
+       return 'January','black'
+    elif month == 2:
+       return 'February','brown'
+    elif month == 3:
+       return 'March','red'
+    elif month == 4:
+       return 'April','orange'
+    elif month == 5:
+       return 'May','yellow'
+    elif month == 6:
+       return 'June','blue'
+    elif month == 7:
+       return 'July','violet'
+    elif month == 8:
+       return 'August','pink'
+    elif month == 9:
+       return 'September','grey'
+    elif month == 10:
+       return 'October','pink'
+    elif month == 11:
+       return 'November','purple'
+    else:
+       return 'December','green'
+
+# Assigning variables to resampled data
+TEMP_DATA = df_monthly_mean.iloc[:,0]
+HUM_DATA = df_monthly_mean.iloc[:,1]
+def plot_month(month, data):
+    label, color = label_color(month)
+    mdata = data[data.index.month == month]
+    sns.lineplot(data=mdata,label=label,color=color,marker='o')
+def sns_plot(title, data):
+    plt.figure(figsize=(14,8))
+    plt.title(title)
+    plt.xlabel('YEAR')
+    for i in range(1,13):
+        plot_month(i,data)
+    plt.savefig('plot4.png', dpi=300, bbox_inches='tight')
+    plt.show()
+
+# Month-wise Plot for Apparent Temperature of 10 years 
+title = 'Month-wise Plot for Apparent Temperature of 10 years' 
+sns_plot(title, TEMP_DATA)
+</code></pre><p><img src="11.png" alt="color">
+This graph shows the changes in Temperature for each month from 2006 to 2016.</p>
+<pre tabindex="0"><code># Month-wise Plot for Humidity of 10 years 
+title = 'Month-wise Plot for Humidity of 10 years' 
+sns_plot(title, HUM_DATA)
+</code></pre><p><img src="12.png" alt="humcolor"></p>
+<p>This graph shows the changes in Humidity for each month from 2006 to 2016.</p>
+<h2 id="variation-of-humidity--apparent-temperature-for-each-months">Variation of Humidity &amp; Apparent Temperature for each months:</h2>
+<p>Creating a function that helps to analyze the variations in Apparent Temperature and Humidity for each month over the 10 years.</p>
+<pre tabindex="0"><code># Function for plotting variation for each month
+def sns_month_plot(month):
+    plt.figure(figsize=(15,7))
+    label = label_color(month)[0]
+    plt.title('Apparent Temperature Vs Humidity for {}'.format(label))
+    data = df_monthly_mean[df_monthly_mean.index.month == month]
+    plt.xlabel('YEAR')
+    sns.lineplot(data=data, marker='o')
+    name=&quot;month&quot;+str(month)+&quot;.png&quot;
+    plt.savefig(name, dpi=300, bbox_inches='tight')
+    plt.show()
+
+# Plot for the month of 'January - December'
+for month in range(1,13):
+    sns_month_plot(month)
+</code></pre><p>The graphs below show the variations in Apparent Temperature and Humidity for each month from 2006 to 2016.</p>
+<h4 id="january">January</h4>
+<p><img src="13.png" alt="jan"></p>
+<h4 id="february">February</h4>
+<p><img src="14.png" alt="feb"></p>
+<h4 id="march">March</h4>
+<p><img src="15.png" alt="mar"></p>
+<p>And so on.</p>
+<h3 id="observation-3">Observation:</h3>
+<ol>
+<li>As from the above plots, we can understand that, ’The Apparent Temperature’ has a tremendous fluctuation over the time period.</li>
+<li>There is a sharp rise of temperature between year 2008–2009 which again decreases in year 2009–2010.</li>
+<li>It is observed that the average Apparent Temperature is at its peak in year 2009 which further drops to its lowest in year 2015.</li>
+<li>Whereas the average Humidity has remained nearly constant over the period of time.</li>
+</ol>
+<h3 id="conclusion">Conclusion:</h3>
+<p>From this analysis, We can conclude that the Apparent temperature and humidity compared monthly across 10 years of the data indicate an increase due to Global warming. This clears that our <em>Null Hypothesis</em> is having a <strong>True positive</strong> impact.</p>
+<h3 id="miscellaneous">Miscellaneous:</h3>
+<p>You can do more analysis on the data, the more we question the data, the better we know about it. You can create more and more Hypothesis to verify more about your objective. You can also create a weather prediction model; using this data to train and test your model. It’s all up to you. That is one of the best thing about exploratory data analysis.</p>
+
+</article>
+</div>
+
+
+                
+                    <div class="my-8 sm:-mx-5">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sinx-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+                
+            </div>
+<footer class="my-8 w-full text-center text-xs">
+    <article>Sinan Thahir © 2022</article>
+</footer>
+
+</main>
+<script src="/js/header.0b11855b871cb4d10c6c07b6723b9209f5c2bc9100735ab6ff47c8f9b76bb3d6ae41b488083b5fb15697987334039eb651b25c83228c29ac48a2bc168db8a894.js" integrity="sha512-CxGFW4cctNEMbAe2cjuSCfXCvJEAc1q2/0fI&#43;bdrs9auQbSICDtfsVaXmHM0A562UbJcgyKMKaxIorwWjbiolA=="></script>
+
+
+
+    <script src="/js/zooming.6465dea09c944f54e6047dd74be6d405f3f2d8dfef550bcc6b7c95bf49b0f3f51315c9c7bd4fe7cbce37f40205ccf2aa3a306ebb59f98208e92b91dfafb496e7.js" integrity="sha512-ZGXeoJyUT1TmBH3XS&#43;bUBfPy2N/vVQvMa3yVv0mw8/UTFcnHvU/ny8439AIFzPKqOjBuu1n5ggjpK5Hfr7SW5w=="></script>
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    <script src="/js/search-en-us.min.1a0c7b6bac73d6cea79c3744ec1241b1daa399a1c377f1938b810e5575d253f795ed74ff374f3519052b1702f39ad0e7ddbdc5e0401b5ed761b0c18e8c7b044e.js" integrity="sha512-Ggx7a6xz1s6nnDdE7BJBsdqjmaHDd/GTi4EOVXXSU/eV7XT/N081GQUrFwLzmtDn3b3F4EAbXtdhsMGOjHsETg=="></script>
+
+
+
+
+    
+        <script src="/js/code-copy-btn.3c5f29aad3ef5a0613149d1e108f38f08a5194f4f38774d20f0993208d436103657256e910a6a3ab9e8b70b537bfb82b6b3915b30bac5f39bef8259422ea5f62.js" integrity="sha512-PF8pqtPvWgYTFJ0eEI848IpRlPTzh3TSDwmTII1DYQNlclbpEKajq56LcLU3v7grazkVswusXzm&#43;&#43;CWUIupfYg=="></script>
+    
+
+</body>
+</html>
