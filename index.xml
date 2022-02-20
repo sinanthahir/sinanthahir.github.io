@@ -6,13 +6,13 @@
     <description>Recent content on Sin(x)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Space X Landing Prediction</title>
-      <link>https://sinanthahir.github.io/works/spacex/</link>
+      <link>https://sinanthahir.github.io/showcase/spacex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sinanthahir.github.io/works/spacex/</guid>
+      <guid>https://sinanthahir.github.io/showcase/spacex/</guid>
       <description>&lt;h1 id=&#34;winning-space-race-with-data-science&#34;&gt;Winning Space Race with Data Science&lt;/h1&gt;
 &lt;h2 id=&#34;space-x-landing-prediction-is-an-applied-data-science-capstone-project-done-as-part-of-ibm-data-science-certificationhttpswwwcourseraorgaccountaccomplishmentsprofessional-certhqzx8fq3kar4-program&#34;&gt;Space-X Landing Prediction is an Applied Data Science Capstone Project done as part of &lt;a href=&#34;https://www.coursera.org/account/accomplishments/professional-cert/HQZX8FQ3KAR4&#34;&gt;IBM Data Science Certification&lt;/a&gt; Program.&lt;/h2&gt;
 &lt;h3 id=&#34;objective&#34;&gt;Objective&lt;/h3&gt;
@@ -67,10 +67,10 @@
     
     <item>
       <title>Weather Data Analysis</title>
-      <link>https://sinanthahir.github.io/works/weather/</link>
+      <link>https://sinanthahir.github.io/showcase/weather/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sinanthahir.github.io/works/weather/</guid>
+      <guid>https://sinanthahir.github.io/showcase/weather/</guid>
       <description>&lt;h1 id=&#34;experience-analysis-through-weather-data&#34;&gt;Experience Analysis through Weather Data&lt;/h1&gt;
 &lt;p&gt;Knowing accurate weather conditions is an important element for individuals as well as organizations. Many businesses rely on weather conditions. It is necessary to have the correct data to get accurate decisions. One type of data that’s easier to find on the internet is Weather data. Many sites provide historical data on many meteorological parameters.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -87,10 +87,10 @@
     
     <item>
       <title>Itiha</title>
-      <link>https://sinanthahir.github.io/works/itiha/</link>
+      <link>https://sinanthahir.github.io/showcase/itiha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sinanthahir.github.io/works/itiha/</guid>
+      <guid>https://sinanthahir.github.io/showcase/itiha/</guid>
       <description>&lt;h2 id=&#34;itiha-2k18&#34;&gt;Itiha 2k18&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Itiha 2K18&lt;/strong&gt;, National Techno-Cultural Fest of Rajadhani Institute of Engineering and Technology, Trivandrum hosted on &lt;em&gt;March 8th, 9th and 10th&lt;/em&gt;, 2018. I was one among the &lt;strong&gt;designers&lt;/strong&gt; and collaborator in the &lt;strong&gt;media and promotional&lt;/strong&gt; club.&lt;/p&gt;
 
@@ -98,18 +98,10 @@
   &lt;iframe src=&#34;https://www.youtube.com/embed/Hf4JVc9xY2o?autoplay=1&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
+&lt;p&gt;&lt;img src=&#34;header01.png&#34; alt=&#34;first&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;header02.png&#34; alt=&#34;sec&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;header03.png&#34; alt=&#34;third&#34;&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Business Metrics - Be the Unicorn</title>
-      <link>https://sinanthahir.github.io/blogs/businessmetrics/</link>
-      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://sinanthahir.github.io/blogs/businessmetrics/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/functions/emojify/&#34;&gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;&gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To enable emoji globally, set &lt;code&gt;enableEmoji&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your site&amp;rsquo;s &lt;a href=&#34;https://gohugo.io/getting-started/configuration/&#34;&gt;configuration&lt;/a&gt; and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -536,10 +528,10 @@ Remember: when people tell you something’s wrong or doesn’t work for them, t
     
     <item>
       <title>AI and ML : Shaping the New Automotive Era</title>
-      <link>https://sinanthahir.github.io/blogs/ai-ml-new-automotive-era/</link>
+      <link>https://sinanthahir.github.io/blogs/ai-ml-new-autmotive-era/</link>
       <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://sinanthahir.github.io/blogs/ai-ml-new-automotive-era/</guid>
+      <guid>https://sinanthahir.github.io/blogs/ai-ml-new-autmotive-era/</guid>
       <description>&lt;h2 id=&#34;ai-and-ml--shaping-the-new-automotive-era&#34;&gt;AI and ML : Shaping the New Automotive Era&lt;/h2&gt;
 &lt;p&gt;“Artificial intelligence living in every vehicle will become our reality before you know it.”&lt;/p&gt;
 
@@ -599,6 +591,7 @@ Frank Borman once said “Exploration is really the essence of the human spirit.
       <guid>https://sinanthahir.github.io/bookshelf/writebook/</guid>
       <description>&lt;h2 id=&#34;write-a-book-at-least-one-in-your-lifetime&#34;&gt;Write a book: At least one in your lifetime.&lt;/h2&gt;
 &lt;h3 id=&#34;youll-discover-who-you-are-unless-youve-tried-it&#34;&gt;You’ll discover who you are; unless you’ve tried it.&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;undraw.svg&#34; alt=&#34;undraw&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Living in this world with 7.8 Billion others, you hear that number; each individual with there own life story and putting each one’s creativeness forward to paper in your solace; can actually be a relief and thus a new writer is born.&lt;/p&gt;
 &lt;p&gt;Writing a book considered as a skill but for me it’s upskilling. Listen, everyone can be a writer. Each one of us have a story to share. In fact, more stories to put forward. But the truth to write these stories, first &lt;strong&gt;you need to start write&lt;/strong&gt;. Here come the prior stepping stones– &lt;strong&gt;Dedication and Passion&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;By its very nature, Writing is an introspective and thoughtful activity. You don’t have to complete a book in a month or two; take your time. The more time you take in writing, the more you experience. If you’re an amateur, starting to write — go for &lt;strong&gt;your trajectory of life&lt;/strong&gt;. Many people think they need to do something massive or be famous to write about their life, That’s not truth at all. The reason behind writing about your life is that you have a real story; something worth changing lives of others with your trial and tribulations.&lt;/p&gt;
@@ -626,6 +619,21 @@ Frank Borman once said “Exploration is really the essence of the human spirit.
 &lt;hr&gt;
 &lt;p&gt;&lt;em&gt;This article was original published on &lt;a href=&#34;https://sinanthahir.medium.com/write-a-book-at-least-one-in-your-lifetime-971e73eb4e1c&#34;&gt;Medium&lt;/a&gt; dated Sep 15, 2020. If you can check my Medium space.&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://sinanthahir.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/about/</guid>
+      <description>&lt;h2 id=&#34;-hello-world&#34;&gt;👋 Hello world!&lt;/h2&gt;
+&lt;p&gt;My name is Sinan Thahir. I&amp;rsquo;m currently working as a &lt;a href=&#34;https://sinanthahir.github.io/timeline&#34;&gt;Research Analyst&lt;/a&gt; and a life long learner - mostly &lt;em&gt;analytics&lt;/em&gt; and &lt;em&gt;research&lt;/em&gt; in the field of &lt;strong&gt;data&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Besides loving my job and my side hustle, I love to read books, play video games and scribbling. I love travelling and exploring new places, meeting new people and learning about their culture, traditions and food.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For more details about my education and my past experiences, take a look at my &lt;a href=&#34;https://sinanthahir.github.io/timeline&#34;&gt;timeline&lt;/a&gt; or &lt;a href=&#34;&#34;&gt;resume&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     

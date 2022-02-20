@@ -6,18 +6,7 @@
     <description>Recent content in Data Science on Sin(x)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Business Metrics - Be the Unicorn</title>
-      <link>https://sinanthahir.github.io/blogs/businessmetrics/</link>
-      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://sinanthahir.github.io/blogs/businessmetrics/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/functions/emojify/&#34;&gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;&gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To enable emoji globally, set &lt;code&gt;enableEmoji&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your site&amp;rsquo;s &lt;a href=&#34;https://gohugo.io/getting-started/configuration/&#34;&gt;configuration&lt;/a&gt; and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Experience Analysis through Weather Data : Exploratory Data Analysis</title>
       <link>https://sinanthahir.github.io/blogs/exp-weather-eda/</link>
@@ -274,10 +263,10 @@ for month in range(1,13):
     
     <item>
       <title>AI and ML : Shaping the New Automotive Era</title>
-      <link>https://sinanthahir.github.io/blogs/ai-ml-new-automotive-era/</link>
+      <link>https://sinanthahir.github.io/blogs/ai-ml-new-autmotive-era/</link>
       <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://sinanthahir.github.io/blogs/ai-ml-new-automotive-era/</guid>
+      <guid>https://sinanthahir.github.io/blogs/ai-ml-new-autmotive-era/</guid>
       <description>&lt;h2 id=&#34;ai-and-ml--shaping-the-new-automotive-era&#34;&gt;AI and ML : Shaping the New Automotive Era&lt;/h2&gt;
 &lt;p&gt;“Artificial intelligence living in every vehicle will become our reality before you know it.”&lt;/p&gt;
 
