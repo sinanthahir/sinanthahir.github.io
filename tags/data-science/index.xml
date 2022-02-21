@@ -6,7 +6,319 @@
     <description>Recent content in Data Science on Sin(x)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learn Data Science: Even when you are broke!</title>
+      <link>https://sinanthahir.github.io/blogs/learn-ds-even-when-broke/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/blogs/learn-ds-even-when-broke/</guid>
+      <description>&lt;h1 id=&#34;learn-data-science--even-when-you-are-broke&#34;&gt;Learn Data Science : Even when you are broke&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;01.png&#34; alt=&#34;coverds&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Since the &lt;a href=&#34;https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century&#34;&gt;Harvard Bussiness Review&lt;/a&gt; quoted “&lt;em&gt;Data Scientist: The Sexiest Job of the 21st Century&lt;/em&gt;”, the rose in demand for data scientist and machine learning expert is unimaginable.&lt;/p&gt;
+&lt;h2 id=&#34;why--what-is-data-science-&#34;&gt;Why &amp;amp; What is Data Science ?&lt;/h2&gt;
+&lt;p&gt;If you will look around, the majority of the companies are running around for data. Some are looking for the user’s personal data whereas some are looking for professional details of the user. For the last decade, every company needs data in order to sell their products. Data comes in handy in several industrial processes. Products are being developed after proper data analysis of different users.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Data Science&lt;/strong&gt; is one of the most in-demand skills in the current technology world and all kinds of companies are looking for accomplished Data Scientists to make sense of the massive data they are collecting every day to increase sales, profit, and overall business process.&lt;/p&gt;
+&lt;p&gt;Nowadays many institutes and e-learning platforms are bringing up top notch Master’s/Professional degree programs with a cost worth of $6,000. Since completing my bachelor’s that too; a specialization in mechanical engineering, the broke mind didn’t compel me. So, I gone the other way around, that is too Self Learn.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;More over my instincts, the best way to learn is to experience &amp;amp; understand what you learn by practice.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you are looking for a career in this field, you need to learn the basics of data analysis and if you need resources you have come to the right place.&lt;/p&gt;
+&lt;p&gt;Here, I will be sharing my &lt;code&gt;learning path and material&lt;/code&gt; which helped me to land in my &lt;strong&gt;first job&lt;/strong&gt;, that too as a &lt;em&gt;Research Analyst&lt;/em&gt;. All these courses are &lt;strong&gt;free&lt;/strong&gt; and the &lt;strong&gt;best&lt;/strong&gt; in their class. Besides this, all these courses are trusted by &lt;em&gt;hundreds of students&lt;/em&gt; and have &lt;em&gt;high ratings&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;-path-to-a-free-self-taught-education-in-data-science&#34;&gt;📊 Path to a free self-taught education in Data Science!&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;path.jpg&#34; alt=&#34;pathds&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As you had seen from the above image, to learn data science; knowing about the theory behind the process, the technical needed to drive the process and the method to curate the insights.&lt;/p&gt;
+&lt;p&gt;Generally a wish bone knowledge in Both &lt;code&gt;Math-Statistics&lt;/code&gt; &amp;amp; &lt;code&gt;Programming&lt;/code&gt; can help you fasten the seat belt to &lt;strong&gt;data science&lt;/strong&gt;. Luckily, I had to go through both. lol 🤣&lt;/p&gt;
+&lt;h3 id=&#34;1-introduction-to-data-science&#34;&gt;1. Introduction to Data science&lt;/h3&gt;
+&lt;p&gt;This will be a introductory level course you need to know about skills that will help you filter out the most important data from a pile of unwanted data. This course will help you develop these skills, besides this, you will learn about data science and its history.&lt;/p&gt;
+&lt;p&gt;Course Link 👉 &lt;a href=&#34;https://www.coursera.org/specializations/introduction-data-science&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-math--statistics&#34;&gt;2. Math &amp;amp; Statistics&lt;/h3&gt;
+&lt;p&gt;Math and Statistics for Data Science are essential because these disciples form the basic foundation of all the Machine Learning Algorithms. In fact, Mathematics is behind everything around us, from shapes, patterns, count and colors.&lt;/p&gt;
+&lt;p&gt;I will suggest these two courses;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Calculus 101 | Khan Academy&lt;/strong&gt; 👉 &lt;a href=&#34;https://www.khanacademy.org/math/calculus-1&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Single Variable Calculus | MIT Opensources&lt;/strong&gt; 👉 &lt;a href=&#34;https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;22-linear-algebra&#34;&gt;2.2 Linear Algebra&lt;/h3&gt;
+&lt;p&gt;Many popular machine learning methods, including XGBOOST, use matrices to store inputs and process data. Matrices alongside vector spaces and linear equations form the mathematical branch known as Linear Algebra. In order to understand how many machine learning methods work it is essential to get a good understanding of this field.&lt;/p&gt;
+&lt;p&gt;I will suggest these two courses;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Linear Algebra | Khan Academy&lt;/strong&gt; 👉 &lt;a href=&#34;https://www.khanacademy.org/math/linear-algebra&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Linear Algebra | MIT Opensources&lt;/strong&gt; 👉 &lt;a href=&#34;https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;23-multivariable-calculus&#34;&gt;2.3 Multivariable Calculus&lt;/h3&gt;
+&lt;p&gt;In data science, while looking out for relations between function and factors, we can observe varying dependencies of the factors. Many data science &amp;amp; machine learning algorithms utilize multivariable calculus to optimize the performance of models.&lt;/p&gt;
+&lt;p&gt;I suggest these two courses;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Multivariable Calculus | Khan Academy&lt;/strong&gt; 👉 &lt;a href=&#34;https://www.khanacademy.org/math/multivariable-calculus&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Multivariable Calculus | MIT Opensources&lt;/strong&gt; 👉 &lt;a href=&#34;https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;24-statistics-and-probability&#34;&gt;2.4 Statistics and Probability&lt;/h3&gt;
+&lt;p&gt;If there is one thing that I can be the most confident about my Mechanical Engineering background, it would be a rigorous and solid Math and Stats Foundations. In the midst of the hype around data-driven decision making, the basics are somehow getting sidelined. The boom in data science requires an increase in executive statistics and maths skills. Some of the fundamental concepts expected from a business analyst are correlation, causation and how to statistically test hypothesis.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/8ZI55Inh1_A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I also suggest these two courses;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Business Statistics and Analysis | Coursera&lt;/strong&gt; 👉 &lt;a href=&#34;https://www.coursera.org/specializations/business-statistics-analysis&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Statistics and Probability | Khan Academy&lt;/strong&gt; 👉 &lt;a href=&#34;https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;That will be all for Math, I could recommend with beginning phase. But as you move along, day by day newer techniques will be learned.&lt;/p&gt;
+&lt;h3 id=&#34;3-computer-science-isle&#34;&gt;3. Computer Science Isle&lt;/h3&gt;
+&lt;h4 id=&#34;31-computer-science-principles&#34;&gt;3.1. Computer Science Principles&lt;/h4&gt;
+&lt;p&gt;Program or code runs on a computer and uses CPU,RAM, input/output devices. This goes over all these basic principals of computer science. Data is stored as bits (1s and 0s) in RAM and disk. The course will also go over fundamentals of binary numbers. In this course only follow first 4 sections (1) &lt;code&gt;Digital Information&lt;/code&gt; (2) &lt;code&gt;The Internet&lt;/code&gt; (3) &lt;code&gt;Programming&lt;/code&gt; (4) &lt;code&gt;Algorithms&lt;/code&gt;. Completing remaining sections is optional and do it if you have time and interest.&lt;/p&gt;
+&lt;p&gt;These two courses will provide you with the resources, a little googling can make a big return too;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AP CS Principles | Khan Academy&lt;/strong&gt; 👉 &lt;a href=&#34;https://www.khanacademy.org/computing/ap-computer-science-principles&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Intro to CS and Programming using Python | Edx&lt;/strong&gt; 👉 &lt;a href=&#34;https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;32-data-structures-and-algorithms&#34;&gt;3.2. Data structures and Algorithms&lt;/h3&gt;
+&lt;p&gt;There is not a single programming interview where they don’t ask about data structures and algorithms (a.k.a DSA). DSA are fundamental building blocks of any program (doesn’t matter which programming language). Follow this playlist to get your data structure and algo concepts clear.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_t2GVaQasRY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I also prefer, this course to understand the basics;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Algorithms, Part I | Coursera&lt;/strong&gt; 👉 &lt;a href=&#34;https://www.coursera.org/learn/algorithms-part1&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;33-databases-sql&#34;&gt;3.3. Databases (SQL)&lt;/h3&gt;
+&lt;p&gt;Doesn’t matter which career track you choose, you need to have good understanding of relational databases and SQL (structured query language). Here are some course links for SQL. Literally, &lt;strong&gt;SQL Master&lt;/strong&gt; is one of the best hat you can wear while working in such roles - my experience to say.&lt;/p&gt;
+&lt;p&gt;I will suggest these three, of different kinds;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Database Management Essentials | Coursera&lt;/strong&gt; 👉 &lt;a href=&#34;https://www.coursera.org/learn/database-management&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Intro to SQL | Khan Academy&lt;/strong&gt; 👉 &lt;a href=&#34;https://www.khanacademy.org/computing/computer-programming/sql&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Check this awesome playlist to learn about from installation to basic exercises for SQL Server.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7GVFYt6_ZFMB&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;4-data-science-tools-and-methods&#34;&gt;4. Data Science Tools and Methods&lt;/h3&gt;
+&lt;p&gt;Data scientists apply some operational methods, which are called the techniques on the data through various software, which are known as tools. This combination is used in acquiring data, refining it for the purpose intended, manipulating and labeling, and then examining the results for the best possible outcomes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tools for Data Science | Coursera&lt;/strong&gt; 👉 &lt;a href=&#34;https://www.coursera.org/learn/open-source-tools-for-data-science&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;which-programming-languages-should-i-use&#34;&gt;Which programming languages should I use?&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Python&lt;/code&gt; and &lt;code&gt;R&lt;/code&gt; are heavily used in Data Science community. Remember, the important thing for each course is to internalize the core concepts and to be able to use them with whatever tool (programming language) that you wish. I prefer &lt;code&gt;Python&lt;/code&gt; more, I had seen more people opting it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Python For Data Science | Great Learning&lt;/strong&gt; 👉 &lt;a href=&#34;https://www.mygreatlearning.com/academy/learn-for-free/courses/data-science-with-python&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/eykoKxsYtow&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-o3AxdVcUtQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;5-machine-learning--data-mining&#34;&gt;5. Machine Learning &amp;amp; Data Mining&lt;/h3&gt;
+&lt;p&gt;Many people do the mistake of learning every algorithm in ML and forget where it actually helps in solving a problem. For beginners, it is suggested that they learn the popular and standard algorithms. A complicated algorithm is not always the solution for complex applications. It is all about how an ML problem is solved optimally.&lt;/p&gt;
+&lt;p&gt;I will suggest these two;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ML Crash Course | Google Developers&lt;/strong&gt; 👉 &lt;a href=&#34;https://developers.google.com/machine-learning/crash-course&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Machine Learning | Coursera&lt;/strong&gt; 👉 &lt;a href=&#34;https://www.coursera.org/learn/machine-learning&#34;&gt;Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can Audit the Courses on &lt;strong&gt;Coursera&lt;/strong&gt; and &lt;strong&gt;Edx&lt;/strong&gt; for free access to the content. If you wish to obtain a certificate; go for the certified plans.
+Most of the Youtube series choosed are from &lt;a href=&#34;https://www.youtube.com/channel/UCh9nVJoWXmFb7sLApWGcLPQ&#34;&gt;Code Basics&lt;/a&gt; - because i love the way he represents concepts, ideation for projects &amp;amp; interviews with many data science professional.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;-useful-tips&#34;&gt;🚨 Useful Tips&lt;/h3&gt;
+&lt;p&gt;Please watch this video to understand how you can learn effectively so that you can get maximum output by investing minimum amount of time.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rVmMbMa3ncI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&#34;following-discipline-and-not-giving-up&#34;&gt;Following discipline and not giving up&lt;/h4&gt;
+&lt;p&gt;Learning coding, especially when you are new, can get frustrating at times. Every good programmer has gone through this pain so if you are facing issues, don’t start thinking you are not smart and coding is not your thing. You need to have lot of patience. When you come from non coding background, thinking in terms of coding is a big shift in the mind paradigm hence it can take some time before it starts clicking you.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you have any queries regarding any topics, feel free to connect with me. Kindly share among your colleague, it may be helpful for them.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;The Article was also published on my &lt;a href=&#34;https://medium.com/@sinanthahir/learn-data-science-even-when-you-are-broke-b5561e837f7c&#34;&gt;Medium&lt;/a&gt; Space.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning for Recognizing Handwritten Digits</title>
+      <link>https://sinanthahir.github.io/blogs/recognizing-handwritten-digits/</link>
+      <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/blogs/recognizing-handwritten-digits/</guid>
+      <description>&lt;h2 id=&#34;machine-learning-for-recognizing-handwritten-digits&#34;&gt;Machine Learning for Recognizing Handwritten Digits&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;00head.jpeg&#34; alt=&#34;cover&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Machine learning&lt;/strong&gt; is a field of &lt;em&gt;artificial intelligence&lt;/em&gt; in which a system is designed to learn automatically given a set of input data. After the system has learnt (we say that the system has been trained), we can use it to make predictions for new data, unseen before. This approach makes it possible to solve complex problems which are difficult or impossible to solve with traditional sequential programming.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Recognizing handwritten text&lt;/strong&gt; is a problem that traces back to the first automatic machines that needed to recognize individual characters in handwritten documents. Think about, for example, the ZIP codes on letters at the post office and the automation needed to recognize these five digits. Perfect recognition of these codes is necessary to sort mail automatically and efficiently. Included among the other applications that may come to mind is &lt;strong&gt;OCR (Optical Character Recognition)&lt;/strong&gt; software. OCR software must read handwritten text, or pages of printed books, for general electronic documents in which each character is well defined. But the problem of handwriting recognition goes farther back in time, more precisely to the early 20th Century (the 1920s), when Emanuel Goldberg (1881–1970) began his studies regarding this issue and suggested that a statistical approach would be an optimal choice.&lt;/p&gt;
+
+
+
+
+
+
+    
+    
+
+
+&lt;div class=&#34;rounded p-3 my-6&#34; style=&#34;background-color: #d9edf7; color: #31708f;&#34; &gt;
+    
+In this project, our goal is to get started hands on with machine learning to recognize this handwrittens, so I’m only going to give you a simplified explanation for now.
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;train-network.png&#34; alt=&#34;network&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The above network displays a network of successive training sets, which consists of &lt;em&gt;the image of a digit &amp;amp; a label, which tells us what the image truly represents.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;At first, the first image is processed by the neural network and produces an answer: &lt;code&gt;that is a 9&lt;/code&gt;. The connections of neurons in the network be in randomly stated and is providing anything useful, just a random answer.&lt;/p&gt;
+&lt;p&gt;The answer is compared to the label. Here, the value of &lt;code&gt;(9)&lt;/code&gt; is actually different from the label, i.e the value &lt;code&gt;(3)&lt;/code&gt;. Some feedback is given back such that the network can improve, favoring in tend to give a correct answer.&lt;/p&gt;
+&lt;p&gt;Then the next example are considered and the neural network learns in such iterative way.&lt;/p&gt;
+&lt;h2 id=&#34;aim&#34;&gt;Aim:&lt;/h2&gt;
+&lt;p&gt;The primary aim of this project involves predicting a numeric value, and then reading and interpreting an image that uses a handwritten font.&lt;/p&gt;
+&lt;h2 id=&#34;hypothesis&#34;&gt;Hypothesis:&lt;/h2&gt;
+&lt;p&gt;The Digits data set of the scikit-learn library provides numerous datasets that are useful for testing many problems of data analysis and prediction of the results. Some Scientist claims that it predicts the digit accurately 95% of the times. Perform data Analysis to accept or reject this Hypothesis.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here, I will be using Anaconda Kernel Interpreted VS Code Environment and using Python libraries like Matplotlib, Seaborn, Scikit-Learn.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;the-digits-dataset&#34;&gt;The Digits Dataset:&lt;/h2&gt;
+&lt;p&gt;The scikit-learn library provides many datasets that are useful for testing many problems of data analysis and prediction of the results. Also in this case there is a dataset of images called Digits. This dataset comprises 1,797 images that are 8x8 pixels in size. Each image is a handwritten digit in grayscale.&lt;/p&gt;
+&lt;h3 id=&#34;importing-dataset&#34;&gt;Importing Dataset&lt;/h3&gt;
+&lt;p&gt;Import datasets module from sklearn library and load the digits dataset using the &lt;code&gt;load_digits()&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;from sklearn import datasets
+digits = datasets.load_digits()
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;description-of-dataset&#34;&gt;Description of Dataset&lt;/h3&gt;
+&lt;p&gt;After loading the dataset, we can read the information about the dataset by calling the &lt;code&gt;DESCR&lt;/code&gt; attribute.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;print(digits.DESCR)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The textual description of the dataset, the authors who contributed to its creation, and the references will appear as shown in the output.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;01.png&#34; alt=&#34;desc_out&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Each dataset in the scikit-learn library has a field containing all the information.&lt;/p&gt;
+&lt;h3 id=&#34;targets&#34;&gt;Targets&lt;/h3&gt;
+&lt;p&gt;The numerical values represented by images, i.e., the targets, are contained in the &lt;code&gt;digit.targets&lt;/code&gt; array.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;digits.target
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Output:
+array([0, 1, 2, ..., 8, 9, 8])
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;dataset-shape&#34;&gt;Dataset Shape&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Dimensions&lt;/strong&gt; of the dataset can be obtained using &lt;code&gt;data.shape()&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;digits.data.shape
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Output:
+(1797, 64)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The output shows that the dataset has 1797 images of 8x8 size(i.e, 8 * 8 = 64 px). In other words, this array could be represented in 3D as a pile of images with 8x8 pixels each.&lt;/p&gt;
+&lt;h3 id=&#34;images-of-the-handwritten-digits&#34;&gt;Images of the handwritten digits&lt;/h3&gt;
+&lt;p&gt;The images of the handwritten digits are contained in an array. Each element of this array is an image that is represented by an 8x8 matrix of numerical values that correspond to grayscale from white, with a value of 0, to black, with the value 15.&lt;/p&gt;
+&lt;p&gt;Let’s look at the data of the first 8x8 image. Each slot in the array corresponds to a pixel, and the value in the slot is the amount of black in the pixel.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;digits.images[0]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;dig-image.png&#34; alt=&#34;digits&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;visualization-of-an-array&#34;&gt;Visualization of an array&lt;/h3&gt;
+&lt;p&gt;We can visually check the contents of this result. The following steps can get it done&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Import &lt;code&gt;pyplot&lt;/code&gt; module which is under matplotlib as &lt;code&gt;plt&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;imshow()&lt;/code&gt; function is used to display data as an image; i.e. on a 2D regular raster.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cmap = gray_r&lt;/code&gt; displays a grayscale image.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;interpolation= ‘nearest’&lt;/code&gt; displays an image without trying to interpolate between pixels if the display resolution is not the same as the image resolution.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;title()&lt;/code&gt; function is used to display the title on the graph.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import matplotlib.pyplot as plt
+plt.imshow(digits.images[0], cmap=plt.cm.gray_r, interpolation=&#39;nearest&#39;)
+plt.title(&#39;one of the 1797 handwritten digits&#39;)
+plt.savefig(&#39;plot1.png&#39;, dpi=100, bbox_inches=&#39;tight&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;By running this command, we will obtain the grayscale image as follows:
+&lt;img src=&#34;gigi01.png&#34; alt=&#34;sing-digi&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;visualization-of-10-digits&#34;&gt;Visualization of 10 digits&lt;/h3&gt;
+&lt;p&gt;Using the NumPy and matplotlib libraries, we can display each digit from 0 to 9 which are in the form of an array as images.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The &lt;code&gt;figure()&lt;/code&gt; function in the pyplot module of the matplotlib library is used to create a new &lt;strong&gt;figure&lt;/strong&gt; with a specified size of (15,4).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;subplots_adjust(hspace=0.8)&lt;/code&gt; is used to adjust the space between the rows of the subplots.&lt;/li&gt;
+&lt;li&gt;Combine two lists using the &lt;code&gt;zip()&lt;/code&gt; function for easier handling inside the plotting loop.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;enumerate()&lt;/code&gt; method adds a counter to an iterable and returns it. The returned object is a &lt;code&gt;enumerate&lt;/code&gt; object.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;subplot()&lt;/code&gt; function is used to add a subplot to a current figure at the specified grid position.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import numpy as np 
+plt.figure(figsize=(15,4))
+plt.subplots_adjust(hspace=0.8)images_and_labels = list(zip(digits.images, digits.target)) 
+for index, (image, label) in enumerate(images_and_labels[:10]):                                    
+    plt.subplot(2, 5, index + 1)    
+    plt.imshow(image, cmap=plt.cm.gray_r, interpolation=&#39;nearest&#39;) 
+    plt.title(&#39;Training: %i&#39; % label, fontsize =12)
+plt.savefig(&#39;plot2.png&#39;, dpi=300, bbox_inches=&#39;tight&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;alldigi.png&#34; alt=&#34;all&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;flatten-the-input-images&#34;&gt;Flatten the input images&lt;/h3&gt;
+&lt;p&gt;The inputs are 8x8 grayscale images. we can produce a flat array of 64-pixel values so that each pixel corresponds to a column for the classifier.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;len()&lt;/code&gt; function gives the number of images in the dataset.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;reshape()&lt;/code&gt; function returns an array containing the same data with a new shape.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;n = len(digits.images)
+print(n)
+data = digits.images.reshape((n, -1))
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Output:
+1797
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It was reported that the dataset is a training set consisting of 1,797 images. We determined that it is true.&lt;/p&gt;
+&lt;h3 id=&#34;the-machine-learning-model&#34;&gt;The Machine Learning Model&lt;/h3&gt;
+&lt;p&gt;An estimator that is useful in this case is sklearn.svm.SVC, which uses the technique of &lt;strong&gt;Support Vector Classification (SVC)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“Support Vector Machine” (SVM)&lt;/strong&gt; is a supervised machine learning algorithm that is mostly used in classification problems.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can read more about SVM model from &lt;a href=&#34;https://scikit-learn.org/stable/modules/svm.html&#34;&gt;Scikit-Learn’s Official Document&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Import the SVM module of the scikit-learn library and create an estimator of SVC type and then choose an initial setting, assigning the values C and gamma generic values.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#import svm model
+from sklearn import svm
+
+#Create a SVMClassifier
+svc = svm.SVC(gamma=0.001, C=100.)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;split-the-dataset&#34;&gt;Split the Dataset&lt;/h3&gt;
+&lt;p&gt;once we define a predictive model, we must instruct it with a training and test set. The &lt;strong&gt;training set&lt;/strong&gt; is a set of data in which you already know the belonging class and the &lt;strong&gt;test set&lt;/strong&gt; is a secondary data set that is used to test a machine learning program after it has been trained on initial training.&lt;/p&gt;
+&lt;p&gt;Import &lt;code&gt;train_test_split()&lt;/code&gt; function which is used for splitting data arrays into two subsets i.e., into train and test sets.&lt;/p&gt;
+&lt;p&gt;Here we have split the data by assigning &lt;strong&gt;0.01&lt;/strong&gt; as test size.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;from sklearn.model_selection import train_test_split
+
+x_train, x_test, y_train, y_test = train_test_split(data, digits.target, test_size=0.01, random_state=0)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;train-the-model&#34;&gt;Train the model&lt;/h3&gt;
+&lt;p&gt;we can train the svc estimator that we defined earlier using the &lt;code&gt;fit()&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;After a short time, the trained estimator will appear with text output.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;svc.fit(x_train, y_train)
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Output:
+SVC(C=100.0, gamma=0.001)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;test-the-model&#34;&gt;Test the model&lt;/h3&gt;
+&lt;p&gt;we can test our estimator by making it interpret the digits of the test set using &lt;code&gt;predict()&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;y_pred = svc.predict(x_test)
+y_pred
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Output:
+array([2, 8, 2, 6, 6, 7, 1, 9, 8, 5, 2, 8, 6, 6, 6, 6, 1, 0])
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We obtain the results in the form of an array.&lt;/p&gt;
+&lt;h3 id=&#34;visualize-the-test-images&#34;&gt;Visualize the test images&lt;/h3&gt;
+&lt;p&gt;We can plot the images of the predicted digits from the array using the following code.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;images_and_predictions = list(zip(x_test,y_pred))
+plt.figure(figsize=(18,5))
+for index, (image, prediction) in enumerate(images_and_predictions[:19]):
+     plt.subplot(2, 9, index + 1)
+     image = image.reshape(8, 8)
+     plt.imshow(image, cmap=plt.cm.gray_r, interpolation=&#39;nearest&#39;)
+     plt.title(&#39;Prediction: %i&#39; % prediction)
+# save the figure
+plt.savefig(&#39;plot3.png&#39;, dpi=300, bbox_inches=&#39;tight&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;res.png&#34; alt=&#34;result&#34;&gt;
+It is able to recognize the handwritten digits and interprete all the digits of the validation set correctly.&lt;/p&gt;
+&lt;h3 id=&#34;accuracy-of-the-model&#34;&gt;Accuracy of the model&lt;/h3&gt;
+&lt;p&gt;The accuracy score of the model can be obtained using the &lt;code&gt;score()&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;score = svm.score(x_test, y_test)
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Output:
+Accuracy Score: 1.0
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;confusion-matrix&#34;&gt;Confusion Matrix&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;confusion matrix&lt;/strong&gt; is a table that is often used to describe the performance of a classification model (or “classifier”) on a set of test data for which the true values are known.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#For Confusion Matrix
+from sklearn.metrics import confusion_matrix
+import pandas as pd
+import seaborn as sn 
+
+data = confusion_matrix(y_test, y_pred)
+df_cm = pd.DataFrame(data, columns=np.unique(y_test), index = np.unique(y_test))
+df_cm.index.name = &#39;Actual&#39;
+df_cm.columns.name = &#39;Predicted&#39; 
+
+plt.figure(figsize = (10,10))
+sn.set(font_scale=1.4)#for label size
+plt.title(&#39;Confusion Matrix&#39;)
+sn.heatmap(df_cm, annot=True,annot_kws={&amp;quot;size&amp;quot;: 12})# font size
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;conf-mat.png&#34; alt=&#34;confusion&#34;&gt;
+A &lt;strong&gt;Classification report&lt;/strong&gt; is used to measure the quality of predictions from a &lt;strong&gt;classification&lt;/strong&gt; algorithm.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;clas-repo.png&#34; alt=&#34;report&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Given the large number of elements contained in the Digits dataset, we will certainly obtain a very effective model, i.e., one that’s capable of recognizing with good certainty.&lt;/p&gt;
+&lt;p&gt;We test the hypothesis by using these cases, each case for a different range of training and validation sets.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tab11.png&#34; alt=&#34;tabular&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After performing the data analysis on the dataset with three different test cases, we can conclude that the given hypothesis is true i.e., the model predicts the digit accurately 95% of the times.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can find Source code: &lt;a href=&#34;https://github.com/sinanthahir/Internship_suven_technology/blob/main/Recognizing-Handwritten-Digits/handwritten-digits-recognizer.ipynb&#34;&gt;github@sinanthahir&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
     <item>
       <title>Experience Analysis through Weather Data : Exploratory Data Analysis</title>
       <link>https://sinanthahir.github.io/blogs/exp-weather-eda/</link>

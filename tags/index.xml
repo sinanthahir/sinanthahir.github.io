@@ -6,22 +6,67 @@
     <description>Recent content in Tags on Sin(x)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Science</title>
+      <link>https://sinanthahir.github.io/tags/data-science/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning</title>
+      <link>https://sinanthahir.github.io/tags/learning/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathematics</title>
+      <link>https://sinanthahir.github.io/tags/mathematics/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/mathematics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ML</title>
+      <link>https://sinanthahir.github.io/tags/ml/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>https://sinanthahir.github.io/tags/statistics/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/statistics/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Analytics</title>
       <link>https://sinanthahir.github.io/tags/analytics/</link>
-      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sinanthahir.github.io/tags/analytics/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Data Science</title>
-      <link>https://sinanthahir.github.io/tags/data-science/</link>
-      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <title>Scikit Learn</title>
+      <link>https://sinanthahir.github.io/tags/scikit-learn/</link>
+      <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://sinanthahir.github.io/tags/data-science/</guid>
+      <guid>https://sinanthahir.github.io/tags/scikit-learn/</guid>
       <description></description>
     </item>
     
@@ -31,6 +76,42 @@
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sinanthahir.github.io/tags/eda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Community</title>
+      <link>https://sinanthahir.github.io/tags/community/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/community/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Creator</title>
+      <link>https://sinanthahir.github.io/tags/creator/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/creator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Idea Generation</title>
+      <link>https://sinanthahir.github.io/tags/idea-generation/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/idea-generation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Side Hustle</title>
+      <link>https://sinanthahir.github.io/tags/side-hustle/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/side-hustle/</guid>
       <description></description>
     </item>
     
@@ -76,15 +157,6 @@
       <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sinanthahir.github.io/tags/automotive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ML</title>
-      <link>https://sinanthahir.github.io/tags/ml/</link>
-      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sinanthahir.github.io/tags/ml/</guid>
       <description></description>
     </item>
     

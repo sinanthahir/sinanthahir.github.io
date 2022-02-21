@@ -6,7 +6,198 @@
     <description>Recent content in Analytics on Sin(x)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning for Recognizing Handwritten Digits</title>
+      <link>https://sinanthahir.github.io/blogs/recognizing-handwritten-digits/</link>
+      <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/blogs/recognizing-handwritten-digits/</guid>
+      <description>&lt;h2 id=&#34;machine-learning-for-recognizing-handwritten-digits&#34;&gt;Machine Learning for Recognizing Handwritten Digits&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;00head.jpeg&#34; alt=&#34;cover&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Machine learning&lt;/strong&gt; is a field of &lt;em&gt;artificial intelligence&lt;/em&gt; in which a system is designed to learn automatically given a set of input data. After the system has learnt (we say that the system has been trained), we can use it to make predictions for new data, unseen before. This approach makes it possible to solve complex problems which are difficult or impossible to solve with traditional sequential programming.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Recognizing handwritten text&lt;/strong&gt; is a problem that traces back to the first automatic machines that needed to recognize individual characters in handwritten documents. Think about, for example, the ZIP codes on letters at the post office and the automation needed to recognize these five digits. Perfect recognition of these codes is necessary to sort mail automatically and efficiently. Included among the other applications that may come to mind is &lt;strong&gt;OCR (Optical Character Recognition)&lt;/strong&gt; software. OCR software must read handwritten text, or pages of printed books, for general electronic documents in which each character is well defined. But the problem of handwriting recognition goes farther back in time, more precisely to the early 20th Century (the 1920s), when Emanuel Goldberg (1881–1970) began his studies regarding this issue and suggested that a statistical approach would be an optimal choice.&lt;/p&gt;
+
+
+
+
+
+
+    
+    
+
+
+&lt;div class=&#34;rounded p-3 my-6&#34; style=&#34;background-color: #d9edf7; color: #31708f;&#34; &gt;
+    
+In this project, our goal is to get started hands on with machine learning to recognize this handwrittens, so I’m only going to give you a simplified explanation for now.
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;train-network.png&#34; alt=&#34;network&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The above network displays a network of successive training sets, which consists of &lt;em&gt;the image of a digit &amp;amp; a label, which tells us what the image truly represents.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;At first, the first image is processed by the neural network and produces an answer: &lt;code&gt;that is a 9&lt;/code&gt;. The connections of neurons in the network be in randomly stated and is providing anything useful, just a random answer.&lt;/p&gt;
+&lt;p&gt;The answer is compared to the label. Here, the value of &lt;code&gt;(9)&lt;/code&gt; is actually different from the label, i.e the value &lt;code&gt;(3)&lt;/code&gt;. Some feedback is given back such that the network can improve, favoring in tend to give a correct answer.&lt;/p&gt;
+&lt;p&gt;Then the next example are considered and the neural network learns in such iterative way.&lt;/p&gt;
+&lt;h2 id=&#34;aim&#34;&gt;Aim:&lt;/h2&gt;
+&lt;p&gt;The primary aim of this project involves predicting a numeric value, and then reading and interpreting an image that uses a handwritten font.&lt;/p&gt;
+&lt;h2 id=&#34;hypothesis&#34;&gt;Hypothesis:&lt;/h2&gt;
+&lt;p&gt;The Digits data set of the scikit-learn library provides numerous datasets that are useful for testing many problems of data analysis and prediction of the results. Some Scientist claims that it predicts the digit accurately 95% of the times. Perform data Analysis to accept or reject this Hypothesis.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here, I will be using Anaconda Kernel Interpreted VS Code Environment and using Python libraries like Matplotlib, Seaborn, Scikit-Learn.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;the-digits-dataset&#34;&gt;The Digits Dataset:&lt;/h2&gt;
+&lt;p&gt;The scikit-learn library provides many datasets that are useful for testing many problems of data analysis and prediction of the results. Also in this case there is a dataset of images called Digits. This dataset comprises 1,797 images that are 8x8 pixels in size. Each image is a handwritten digit in grayscale.&lt;/p&gt;
+&lt;h3 id=&#34;importing-dataset&#34;&gt;Importing Dataset&lt;/h3&gt;
+&lt;p&gt;Import datasets module from sklearn library and load the digits dataset using the &lt;code&gt;load_digits()&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;from sklearn import datasets
+digits = datasets.load_digits()
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;description-of-dataset&#34;&gt;Description of Dataset&lt;/h3&gt;
+&lt;p&gt;After loading the dataset, we can read the information about the dataset by calling the &lt;code&gt;DESCR&lt;/code&gt; attribute.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;print(digits.DESCR)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The textual description of the dataset, the authors who contributed to its creation, and the references will appear as shown in the output.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;01.png&#34; alt=&#34;desc_out&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Each dataset in the scikit-learn library has a field containing all the information.&lt;/p&gt;
+&lt;h3 id=&#34;targets&#34;&gt;Targets&lt;/h3&gt;
+&lt;p&gt;The numerical values represented by images, i.e., the targets, are contained in the &lt;code&gt;digit.targets&lt;/code&gt; array.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;digits.target
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Output:
+array([0, 1, 2, ..., 8, 9, 8])
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;dataset-shape&#34;&gt;Dataset Shape&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Dimensions&lt;/strong&gt; of the dataset can be obtained using &lt;code&gt;data.shape()&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;digits.data.shape
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Output:
+(1797, 64)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The output shows that the dataset has 1797 images of 8x8 size(i.e, 8 * 8 = 64 px). In other words, this array could be represented in 3D as a pile of images with 8x8 pixels each.&lt;/p&gt;
+&lt;h3 id=&#34;images-of-the-handwritten-digits&#34;&gt;Images of the handwritten digits&lt;/h3&gt;
+&lt;p&gt;The images of the handwritten digits are contained in an array. Each element of this array is an image that is represented by an 8x8 matrix of numerical values that correspond to grayscale from white, with a value of 0, to black, with the value 15.&lt;/p&gt;
+&lt;p&gt;Let’s look at the data of the first 8x8 image. Each slot in the array corresponds to a pixel, and the value in the slot is the amount of black in the pixel.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;digits.images[0]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;dig-image.png&#34; alt=&#34;digits&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;visualization-of-an-array&#34;&gt;Visualization of an array&lt;/h3&gt;
+&lt;p&gt;We can visually check the contents of this result. The following steps can get it done&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Import &lt;code&gt;pyplot&lt;/code&gt; module which is under matplotlib as &lt;code&gt;plt&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;imshow()&lt;/code&gt; function is used to display data as an image; i.e. on a 2D regular raster.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cmap = gray_r&lt;/code&gt; displays a grayscale image.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;interpolation= ‘nearest’&lt;/code&gt; displays an image without trying to interpolate between pixels if the display resolution is not the same as the image resolution.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;title()&lt;/code&gt; function is used to display the title on the graph.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import matplotlib.pyplot as plt
+plt.imshow(digits.images[0], cmap=plt.cm.gray_r, interpolation=&#39;nearest&#39;)
+plt.title(&#39;one of the 1797 handwritten digits&#39;)
+plt.savefig(&#39;plot1.png&#39;, dpi=100, bbox_inches=&#39;tight&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;By running this command, we will obtain the grayscale image as follows:
+&lt;img src=&#34;gigi01.png&#34; alt=&#34;sing-digi&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;visualization-of-10-digits&#34;&gt;Visualization of 10 digits&lt;/h3&gt;
+&lt;p&gt;Using the NumPy and matplotlib libraries, we can display each digit from 0 to 9 which are in the form of an array as images.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The &lt;code&gt;figure()&lt;/code&gt; function in the pyplot module of the matplotlib library is used to create a new &lt;strong&gt;figure&lt;/strong&gt; with a specified size of (15,4).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;subplots_adjust(hspace=0.8)&lt;/code&gt; is used to adjust the space between the rows of the subplots.&lt;/li&gt;
+&lt;li&gt;Combine two lists using the &lt;code&gt;zip()&lt;/code&gt; function for easier handling inside the plotting loop.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;enumerate()&lt;/code&gt; method adds a counter to an iterable and returns it. The returned object is a &lt;code&gt;enumerate&lt;/code&gt; object.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;subplot()&lt;/code&gt; function is used to add a subplot to a current figure at the specified grid position.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import numpy as np 
+plt.figure(figsize=(15,4))
+plt.subplots_adjust(hspace=0.8)images_and_labels = list(zip(digits.images, digits.target)) 
+for index, (image, label) in enumerate(images_and_labels[:10]):                                    
+    plt.subplot(2, 5, index + 1)    
+    plt.imshow(image, cmap=plt.cm.gray_r, interpolation=&#39;nearest&#39;) 
+    plt.title(&#39;Training: %i&#39; % label, fontsize =12)
+plt.savefig(&#39;plot2.png&#39;, dpi=300, bbox_inches=&#39;tight&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;alldigi.png&#34; alt=&#34;all&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;flatten-the-input-images&#34;&gt;Flatten the input images&lt;/h3&gt;
+&lt;p&gt;The inputs are 8x8 grayscale images. we can produce a flat array of 64-pixel values so that each pixel corresponds to a column for the classifier.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;len()&lt;/code&gt; function gives the number of images in the dataset.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;reshape()&lt;/code&gt; function returns an array containing the same data with a new shape.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;n = len(digits.images)
+print(n)
+data = digits.images.reshape((n, -1))
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Output:
+1797
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It was reported that the dataset is a training set consisting of 1,797 images. We determined that it is true.&lt;/p&gt;
+&lt;h3 id=&#34;the-machine-learning-model&#34;&gt;The Machine Learning Model&lt;/h3&gt;
+&lt;p&gt;An estimator that is useful in this case is sklearn.svm.SVC, which uses the technique of &lt;strong&gt;Support Vector Classification (SVC)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“Support Vector Machine” (SVM)&lt;/strong&gt; is a supervised machine learning algorithm that is mostly used in classification problems.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can read more about SVM model from &lt;a href=&#34;https://scikit-learn.org/stable/modules/svm.html&#34;&gt;Scikit-Learn’s Official Document&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Import the SVM module of the scikit-learn library and create an estimator of SVC type and then choose an initial setting, assigning the values C and gamma generic values.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#import svm model
+from sklearn import svm
+
+#Create a SVMClassifier
+svc = svm.SVC(gamma=0.001, C=100.)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;split-the-dataset&#34;&gt;Split the Dataset&lt;/h3&gt;
+&lt;p&gt;once we define a predictive model, we must instruct it with a training and test set. The &lt;strong&gt;training set&lt;/strong&gt; is a set of data in which you already know the belonging class and the &lt;strong&gt;test set&lt;/strong&gt; is a secondary data set that is used to test a machine learning program after it has been trained on initial training.&lt;/p&gt;
+&lt;p&gt;Import &lt;code&gt;train_test_split()&lt;/code&gt; function which is used for splitting data arrays into two subsets i.e., into train and test sets.&lt;/p&gt;
+&lt;p&gt;Here we have split the data by assigning &lt;strong&gt;0.01&lt;/strong&gt; as test size.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;from sklearn.model_selection import train_test_split
+
+x_train, x_test, y_train, y_test = train_test_split(data, digits.target, test_size=0.01, random_state=0)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;train-the-model&#34;&gt;Train the model&lt;/h3&gt;
+&lt;p&gt;we can train the svc estimator that we defined earlier using the &lt;code&gt;fit()&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;After a short time, the trained estimator will appear with text output.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;svc.fit(x_train, y_train)
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Output:
+SVC(C=100.0, gamma=0.001)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;test-the-model&#34;&gt;Test the model&lt;/h3&gt;
+&lt;p&gt;we can test our estimator by making it interpret the digits of the test set using &lt;code&gt;predict()&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;y_pred = svc.predict(x_test)
+y_pred
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Output:
+array([2, 8, 2, 6, 6, 7, 1, 9, 8, 5, 2, 8, 6, 6, 6, 6, 1, 0])
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We obtain the results in the form of an array.&lt;/p&gt;
+&lt;h3 id=&#34;visualize-the-test-images&#34;&gt;Visualize the test images&lt;/h3&gt;
+&lt;p&gt;We can plot the images of the predicted digits from the array using the following code.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;images_and_predictions = list(zip(x_test,y_pred))
+plt.figure(figsize=(18,5))
+for index, (image, prediction) in enumerate(images_and_predictions[:19]):
+     plt.subplot(2, 9, index + 1)
+     image = image.reshape(8, 8)
+     plt.imshow(image, cmap=plt.cm.gray_r, interpolation=&#39;nearest&#39;)
+     plt.title(&#39;Prediction: %i&#39; % prediction)
+# save the figure
+plt.savefig(&#39;plot3.png&#39;, dpi=300, bbox_inches=&#39;tight&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;res.png&#34; alt=&#34;result&#34;&gt;
+It is able to recognize the handwritten digits and interprete all the digits of the validation set correctly.&lt;/p&gt;
+&lt;h3 id=&#34;accuracy-of-the-model&#34;&gt;Accuracy of the model&lt;/h3&gt;
+&lt;p&gt;The accuracy score of the model can be obtained using the &lt;code&gt;score()&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;score = svm.score(x_test, y_test)
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Output:
+Accuracy Score: 1.0
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;confusion-matrix&#34;&gt;Confusion Matrix&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;confusion matrix&lt;/strong&gt; is a table that is often used to describe the performance of a classification model (or “classifier”) on a set of test data for which the true values are known.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#For Confusion Matrix
+from sklearn.metrics import confusion_matrix
+import pandas as pd
+import seaborn as sn 
+
+data = confusion_matrix(y_test, y_pred)
+df_cm = pd.DataFrame(data, columns=np.unique(y_test), index = np.unique(y_test))
+df_cm.index.name = &#39;Actual&#39;
+df_cm.columns.name = &#39;Predicted&#39; 
+
+plt.figure(figsize = (10,10))
+sn.set(font_scale=1.4)#for label size
+plt.title(&#39;Confusion Matrix&#39;)
+sn.heatmap(df_cm, annot=True,annot_kws={&amp;quot;size&amp;quot;: 12})# font size
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;conf-mat.png&#34; alt=&#34;confusion&#34;&gt;
+A &lt;strong&gt;Classification report&lt;/strong&gt; is used to measure the quality of predictions from a &lt;strong&gt;classification&lt;/strong&gt; algorithm.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;clas-repo.png&#34; alt=&#34;report&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Given the large number of elements contained in the Digits dataset, we will certainly obtain a very effective model, i.e., one that’s capable of recognizing with good certainty.&lt;/p&gt;
+&lt;p&gt;We test the hypothesis by using these cases, each case for a different range of training and validation sets.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tab11.png&#34; alt=&#34;tabular&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After performing the data analysis on the dataset with three different test cases, we can conclude that the given hypothesis is true i.e., the model predicts the digit accurately 95% of the times.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can find Source code: &lt;a href=&#34;https://github.com/sinanthahir/Internship_suven_technology/blob/main/Recognizing-Handwritten-Digits/handwritten-digits-recognizer.ipynb&#34;&gt;github@sinanthahir&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
     <item>
       <title>Experience Analysis through Weather Data : Exploratory Data Analysis</title>
       <link>https://sinanthahir.github.io/blogs/exp-weather-eda/</link>

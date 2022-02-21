@@ -9,7 +9,9 @@
   </url><url>
     <loc>https://sinanthahir.github.io/showcase/weather/</loc>
   </url><url>
-    <loc>https://sinanthahir.github.io/showcase/itiha/</loc>
+    <loc>https://sinanthahir.github.io/showcase/industrial-products/</loc>
+  </url><url>
+    <loc>https://sinanthahir.github.io/showcase/branding-and-promotional/</loc>
   </url><url>
     <loc>https://sinanthahir.github.io/bookshelf/</loc>
     <lastmod>2022-02-04T00:00:00+00:00</lastmod>
@@ -17,14 +19,38 @@
     <loc>https://sinanthahir.github.io/bookshelf/100solitude/</loc>
     <lastmod>2022-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinanthahir.github.io/tags/analytics/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sinanthahir.github.io/blogs/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/tags/data-science/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/blogs/learn-ds-even-when-broke/</loc>
+    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/tags/learning/</loc>
+    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/tags/mathematics/</loc>
+    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/tags/ml/</loc>
+    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/tags/statistics/</loc>
+    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/tags/</loc>
+    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/tags/analytics/</loc>
+    <lastmod>2021-11-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/blogs/recognizing-handwritten-digits/</loc>
+    <lastmod>2021-11-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/tags/scikit-learn/</loc>
+    <lastmod>2021-11-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/tags/eda/</loc>
     <lastmod>2021-11-01T00:00:00+00:00</lastmod>
@@ -32,8 +58,20 @@
     <loc>https://sinanthahir.github.io/blogs/exp-weather-eda/</loc>
     <lastmod>2021-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinanthahir.github.io/tags/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
+    <loc>https://sinanthahir.github.io/tags/community/</loc>
+    <lastmod>2020-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/tags/creator/</loc>
+    <lastmod>2020-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/tags/idea-generation/</loc>
+    <lastmod>2020-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/tags/side-hustle/</loc>
+    <lastmod>2020-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/blogs/podcast-effective-cdn/</loc>
+    <lastmod>2020-12-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/bookshelf/betterdecision-bitteropinions/</loc>
     <lastmod>2020-09-30T00:00:00+00:00</lastmod>
@@ -60,9 +98,6 @@
     <lastmod>2020-09-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/tags/automotive/</loc>
-    <lastmod>2020-09-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinanthahir.github.io/tags/ml/</loc>
     <lastmod>2020-09-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/bookshelf/writebook/</loc>
