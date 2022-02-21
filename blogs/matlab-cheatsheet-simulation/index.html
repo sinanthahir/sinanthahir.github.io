@@ -1,0 +1,760 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="h-full w-full font-sans" lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://sinanthahir.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matlab Modeling and Simulation : Cheat Sheet &amp; Samples - Sin(x)</title>
+
+    
+    <meta name="description" content="Matlab, is a high-performance language which assimilates computation, visualization and programming in a single environment. MATLAB is an interactive system whose basic data element is an array that does not require dimensioning." />
+    
+
+    
+
+    
+    <meta name="author" content="Sinan Thahir" />
+    
+
+    
+        <meta property="og:title" content="Matlab Modeling and Simulation : Cheat Sheet &amp; Samples" />
+<meta property="og:description" content="Matlab, is a high-performance language which assimilates computation, visualization and programming in a single environment. MATLAB is an interactive system whose basic data element is an array that does not require dimensioning." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sinanthahir.github.io/blogs/matlab-cheatsheet-simulation/" /><meta property="article:section" content="blogs" />
+<meta property="article:published_time" content="2021-08-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-19T00:00:00+00:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Matlab Modeling and Simulation : Cheat Sheet &amp; Samples"/>
+<meta name="twitter:description" content="Matlab, is a high-performance language which assimilates computation, visualization and programming in a single environment. MATLAB is an interactive system whose basic data element is an array that does not require dimensioning."/>
+
+    <link rel="stylesheet" href="/css/styles.min.7a1a61a7e69df7aaa60ca4572a6699f3e3751b22d1fd887eda416ab14a9175a618aea8fcf4180c2620f455e7181d55667e6572cdf0807e1bec4138d0228da709.css" integrity="sha512-ehphp+ad96qmDKRXKmaZ8+N1GyLR/Yh+2kFqsUqRdaYYrqj89BgMJiD0VecYHVVmfmVyzfCAfhvsQTjQIo2nCQ==">
+
+
+
+    
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head><body class="flex flex-col items-center w-full">
+        <main class="w-full sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-5/12 m-auto px-6"><header class="mt-9 mb-8">
+    <div class="flex justify-between items-center">
+        <div class="flex items-center">
+            <input id="navbar_btn" class="hidden" type="checkbox">
+            <label for="navbar_btn" class="menu-btn mr-4 items-center flex xl:hidden">
+                <span class="navicon"></span>
+            </label>
+            <a href="/" class="font-bold text-lg xl:text-2xl mr-auto">Sin(x)</a>
+        </div>
+
+        <div class="flex items-center">
+            <div class="cursor-pointer ml-2">
+                <svg id="dark_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg></svg>
+                <svg id="light_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><g><path d="M14,2c1.82,0,3.53,0.5,5,1.35C16.01,5.08,14,8.3,14,12s2.01,6.92,5,8.65C17.53,21.5,15.82,22,14,22C8.48,22,4,17.52,4,12 S8.48,2,14,2z"/></g></g></g></svg></svg>
+            </div>
+
+            
+
+            
+                <div class="ml-2 sep hidden sm:block"></div>
+                <div class="ml-2 relative flex items-center">
+                    <svg id="search_btn" class="cursor-pointer" width="18px" height="18px" viewBox="2 0 20 20"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></svg><div id="search_menu_wrapper" class="hidden justify-center fixed top-0 left-0 w-full h-full z-40">
+    <div id="search_menu" class="fixed flex flex-col w-full h-full sm:h-auto sm:top-24 sm:bottom-24 rounded-none sm:rounded-md sm:w-120 z-50">
+        <div class="flex min-h-10 shadow-md">
+            <div class="flex flex-grow">
+                <input id="search_menu_input" class="flex-grow focus:outline-none px-4 rounded-tl-md" type="text" placeholder=
+                Search&#32;Posts>
+            </div>
+            <div id="search_menu_close_btn" class="flex items-center justify-center w-10 rounded-tr-md cursor-pointer">
+                <svg width="14px" height="14px" viewBox="3 3 18 18"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></svg>
+            </div>
+        </div>
+        <div id="search_menu_results" class="flex-grow overflow-y-auto">
+        </div>
+    </div>
+</div>
+</div>
+            
+        </div>
+    </div>
+
+    <nav id="navbar" class="mt-3 hidden xl:block"><ul class="flex"><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/about/">About</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium insection">
+                        <a href="/blogs/">Blogs</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/bookshelf/">Bookshelf</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/nerd-stuff/">Nerd Stuff</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/showcase/">Showcase</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/timeline/">Timeline</a>
+                    </li></ul>
+    </nav>
+
+    <nav id="navbar_sm" class="mt-2 hidden">
+        <ul>
+            
+                <li class="text-sm mt-2">
+                    <a href="/about/">About</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/blogs/">Blogs</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/bookshelf/">Bookshelf</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/nerd-stuff/">Nerd Stuff</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/showcase/">Showcase</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/timeline/">Timeline</a></li>
+            
+        </ul>
+
+        <hr class="my-4">
+    </nav>
+</header>
+<div id="content" class="my-8">
+                
+
+    <div class="my-7">
+<article >
+    <h2 id="matlab-modeling-and-simulation--cheat-sheet--samples">Matlab Modeling and Simulation : Cheat Sheet &amp; Samples</h2>
+<p><img src="hea.jpeg" alt="covermat"></p>
+<p><strong>Matlab</strong>, is a high-performance language which assimilates computation, visualization and programming in a single environment. The name MATLAB stands for <code>matrix laboratory</code>. MATLAB was originally written to provide easy access to matrix software developed by the <code>LINPACK</code> and <code>EISPACK</code> projects, which together represent the <em>state-of-the-art</em> in software for matrix computation.</p>
+<p>MATLAB is an <em>interactive system</em> whose basic data element is an array that does not require dimensioning. This allows you to solve many technical computing problems, especially those with matrix and vector formulations, in a fraction of the time it would take to write a program in a scalar noninteractive language such as <code>C</code> or <code>Fortran</code>.</p>
+<p>MATLAB® is widely used in different areas of applied mathematics, in education and research and in numerous industries. This software finds its wide applications in different domains of engineering such as:</p>
+<ol>
+<li>Electronics engineers mainly use MATLAB® for designing more efficient devices that are smaller in size and can integrate wireless communications, audio, video, and other attributes.</li>
+<li>In electrical engineering, the application of this program is to examine and simulate momentary phenomena in power systems.</li>
+<li>Mechanical engineers need MATLAB® for scrutiny of problems in control systems, mechanical vibrations, basic engineering mechanics, electrical circuits, statics and dynamics and numerical methods.</li>
+<li>It is used to model and simulate physical problems in the field of chemical engineering.</li>
+</ol>
+<h2 id="cheat-sheet">Cheat Sheet</h2>
+<p>Small variables like x and y will be either row or column vectors and A will always be a matrix.</p>
+<h3 id="basic-commands">Basic Commands</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>clc</code></td>
+<td>Clear command window</td>
+</tr>
+<tr>
+<td><code>clear (all)</code></td>
+<td>Clear all variables</td>
+</tr>
+<tr>
+<td><code>close all</code></td>
+<td>Close all plots</td>
+</tr>
+<tr>
+<td><code>clf</code></td>
+<td>Clear all plots</td>
+</tr>
+<tr>
+<td><code>doc command</code></td>
+<td>Extensive help page for command</td>
+</tr>
+<tr>
+<td><code>help command</code></td>
+<td>Quick help page for command</td>
+</tr>
+<tr>
+<td><code>%This is a command</code></td>
+<td>Indicates a comment</td>
+</tr>
+<tr>
+<td><code>a=5;</code></td>
+<td>Semicolon suppress ouput</td>
+</tr>
+<tr>
+<td><code>whos</code></td>
+<td>List all variables defined</td>
+</tr>
+<tr>
+<td><code>disp('text')</code></td>
+<td>Print text</td>
+</tr>
+<tr>
+<td><code>save 'file.mat'</code></td>
+<td>Save variables to file.mat</td>
+</tr>
+<tr>
+<td><code>load 'file.mat'</code></td>
+<td>Load variables from file.mat</td>
+</tr>
+<tr>
+<td><code>diary on</code></td>
+<td>Record input/output to file diary</td>
+</tr>
+</tbody>
+</table>
+<h3 id="keyboard-shortcuts">Keyboard Shortcuts</h3>
+<table>
+<thead>
+<tr>
+<th>Shortcuts</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>F1</code></td>
+<td>Help/documentation for highlighted function</td>
+</tr>
+<tr>
+<td><code>F5</code></td>
+<td>Run Code</td>
+</tr>
+<tr>
+<td><code>F9</code></td>
+<td>Run highlighted code</td>
+</tr>
+<tr>
+<td><code>F10</code></td>
+<td>Run code line</td>
+</tr>
+<tr>
+<td><code>F11</code></td>
+<td>Run code line, enter functions</td>
+</tr>
+<tr>
+<td><code>F12</code></td>
+<td>Insert break point</td>
+</tr>
+<tr>
+<td><code>Ctrl+D</code></td>
+<td>Open Highlighted codes file</td>
+</tr>
+<tr>
+<td><code>Ctrl+R</code></td>
+<td>Comment code</td>
+</tr>
+<tr>
+<td><code>Ctrl+T</code></td>
+<td>Uncomment code</td>
+</tr>
+<tr>
+<td><code>Ctrl+N</code></td>
+<td>Open new script</td>
+</tr>
+<tr>
+<td><code>Ctrl+W</code></td>
+<td>Close script</td>
+</tr>
+<tr>
+<td><code>Ctrl+C</code></td>
+<td>Abort operation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="entries-of-matrices-and-vectors">Entries of Matrices and Vectors</h3>
+<table>
+<thead>
+<tr>
+<th>Entries</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>abs(x)</code></td>
+<td>The absolute value of <em>x</em></td>
+</tr>
+<tr>
+<td><code>eps</code></td>
+<td>Floating point accuracy</td>
+</tr>
+<tr>
+<td><code>1e6</code></td>
+<td>10^6</td>
+</tr>
+<tr>
+<td><code>sum(x)</code></td>
+<td>Sums elements in <em>x</em></td>
+</tr>
+<tr>
+<td><code>round</code></td>
+<td>Rounds to the nearest integer</td>
+</tr>
+<tr>
+<td><code>ceil</code></td>
+<td>Rounds to the nearest integer greater than or equal to that element</td>
+</tr>
+<tr>
+<td><code>fix</code></td>
+<td>Rounds to the nearest integer toward zero</td>
+</tr>
+<tr>
+<td><code>floor</code></td>
+<td>Rounds to the nearest integer less than or equal to that element</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cell-manipulation">Cell Manipulation</h3>
+<table>
+<thead>
+<tr>
+<th>Manipulation</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x = cell(a, b)</code></td>
+<td>a * b cell array</td>
+</tr>
+<tr>
+<td><code>x{n,m}</code></td>
+<td>Access cell element n,m</td>
+</tr>
+<tr>
+<td><code>cell2mat(x)</code></td>
+<td>Transforms cell to matrix</td>
+</tr>
+</tbody>
+</table>
+<h3 id="manipulation-of-variables">Manipulation of Variables</h3>
+<table>
+<thead>
+<tr>
+<th>Manipulation</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a=500</code></td>
+<td>Define variables <em>a</em> to be 500</td>
+</tr>
+<tr>
+<td><code>x=[3,1,4]</code></td>
+<td>Set <em>x</em> to be the row vector [3,1,4]</td>
+</tr>
+<tr>
+<td><code>x=[3;1;4]</code></td>
+<td>Set <em>x</em> to be the column vector [3,1,4]^<em>T</em></td>
+</tr>
+<tr>
+<td><code>x(2)=7</code></td>
+<td>Change <em>x</em> from [3,1,4] to [3,7,4]</td>
+</tr>
+<tr>
+<td><code>A(2,1)=0</code></td>
+<td>Change A`2,1 from 5 to 0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="basic-arithmetic-and-functions">Basic Arithmetic and Functions</h3>
+<table>
+<thead>
+<tr>
+<th>Operations</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1*2</code>,<code>3+4</code>,<code>5-6</code>,<code>7/8</code></td>
+<td>Multiply, add, subtract and divide</td>
+</tr>
+<tr>
+<td><code>2^8</code></td>
+<td>compute 2^8</td>
+</tr>
+<tr>
+<td><code>sqrt(16)</code></td>
+<td>compute square root of 16</td>
+</tr>
+<tr>
+<td><code>log(5)</code></td>
+<td>compute ln(5)</td>
+</tr>
+<tr>
+<td><code>sin(2*pi/6)</code></td>
+<td>Compute sin(60)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="operations-on-matrices-and-vectors">Operations on Matrices and Vectors</h3>
+<table>
+<thead>
+<tr>
+<th>Operations</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x + 5</code></td>
+<td>Add 5 to every element of <em>x</em></td>
+</tr>
+<tr>
+<td><code>x + y</code></td>
+<td>Elementwise addition of two vectors <em>x</em> and <em>y</em></td>
+</tr>
+<tr>
+<td><code>10 * y</code></td>
+<td>Multiply every element of <em>y</em> by 10</td>
+</tr>
+<tr>
+<td><code>A * y</code></td>
+<td>Product of a matrix and vector</td>
+</tr>
+<tr>
+<td><code>A * B</code></td>
+<td>Product of two matrices</td>
+</tr>
+<tr>
+<td><code>A .* B</code></td>
+<td>Element-wise product of two matrices</td>
+</tr>
+<tr>
+<td><code>A ^ 4</code></td>
+<td>Square matrix <strong>A</strong> to the fourth power</td>
+</tr>
+<tr>
+<td><code>A .^ 4</code></td>
+<td>Every element of <strong>A</strong> to the fourth power</td>
+</tr>
+<tr>
+<td><code>cos(A)</code></td>
+<td>Compute the cosine of every element of <strong>A</strong></td>
+</tr>
+<tr>
+<td><code>abs(A)</code></td>
+<td>Compute the absolute values of every element of <strong>A</strong></td>
+</tr>
+<tr>
+<td><code>A'</code></td>
+<td>Transpose of <strong>A</strong></td>
+</tr>
+<tr>
+<td><code>det(A)</code></td>
+<td>Compute the determinant of <strong>A</strong></td>
+</tr>
+<tr>
+<td><code>size(A)</code></td>
+<td>Get the size of <strong>A</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-import--export">Data Import &amp; Export</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>xlsread</code>/<code>xlswrite</code></td>
+<td>Spreadsheets (<em>.xls,.xlsm</em>)</td>
+</tr>
+<tr>
+<td><code>load/save -ascii</code></td>
+<td>Text files (<em>.txt,.csv</em>)</td>
+</tr>
+<tr>
+<td><code>load/save</code></td>
+<td>Matlab files (<em>.m</em>)</td>
+</tr>
+<tr>
+<td><code>imread/imwrite</code></td>
+<td>Image files</td>
+</tr>
+</tbody>
+</table>
+<h3 id="solving-linear-equations">Solving linear equations</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>inv(A)</code></td>
+<td>Compute the inverse <strong>A^-1</strong></td>
+</tr>
+<tr>
+<td><code>eig(A)</code></td>
+<td>Compute the eigenvalue of <em><strong>A</strong></em></td>
+</tr>
+<tr>
+<td><code>[L,U,P] = lu(A)</code></td>
+<td>The LU factorization <em><strong>PA = LU</strong></em></td>
+</tr>
+<tr>
+<td><code>[V,D] = eig(A)</code></td>
+<td><em><strong>V</strong></em> are the eigenvectors of A, and the diagonals <em><strong>diag(D)</strong></em> are the eigenvalues of A</td>
+</tr>
+<tr>
+<td><code>A\b</code></td>
+<td>Compute the solution <em>x</em> to <strong>A<em>x</em>=b</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="plotting">Plotting</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>plot(x,y)</code></td>
+<td>Plot <em>y</em> versus <em>x</em></td>
+</tr>
+<tr>
+<td><code>loglog(x,y)</code></td>
+<td>Plot <em>y</em> versus <em>x</em> on a log-log scale</td>
+</tr>
+<tr>
+<td><code>semilogx(x,y)</code></td>
+<td>Plot <em>y</em> versus <em>x</em> with <em>x</em> on a log scale</td>
+</tr>
+<tr>
+<td><code>axis equal</code></td>
+<td>Force the <em>y</em> and <em>x</em> axes to be scaled equally</td>
+</tr>
+<tr>
+<td><code>title('A Title')</code></td>
+<td>Add a title to the plot</td>
+</tr>
+<tr>
+<td><code>xlabel('x text')</code></td>
+<td>Add a label to the <em>x</em> axis</td>
+</tr>
+<tr>
+<td><code>legend('foo', 'bar')</code></td>
+<td>Label two curves for the plot</td>
+</tr>
+<tr>
+<td><code>grif on/off</code></td>
+<td>Add a grid to the plot</td>
+</tr>
+<tr>
+<td><code>subplot(a,b,c)</code></td>
+<td>For multiple figures in one plot</td>
+</tr>
+<tr>
+<td><code>hold on</code></td>
+<td>Retains current figure when adding new stuff</td>
+</tr>
+<tr>
+<td><code>set(fig1, 'LineWidth', 2)</code></td>
+<td>Change line width</td>
+</tr>
+<tr>
+<td><code>set(fig1, 'LineStyle', '-')</code></td>
+<td>Change to dot marker</td>
+</tr>
+<tr>
+<td><code>set(fig1, 'Marker', '.')</code></td>
+<td>Change marker type</td>
+</tr>
+</tbody>
+</table>
+<h3 id="debugging">Debugging</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tic/toc</code></td>
+<td>Start/Stop Timer</td>
+</tr>
+<tr>
+<td><code>try/catch</code></td>
+<td>Good to track errors</td>
+</tr>
+<tr>
+<td><code>dbclear</code></td>
+<td>Clear breakpoints</td>
+</tr>
+<tr>
+<td><code>break</code></td>
+<td>Terminate execution of for/while loop</td>
+</tr>
+</tbody>
+</table>
+<h3 id="logicals">Logicals</h3>
+<pre tabindex="0"><code>a = 20;                 %Assign a the value of 10 
+a == 5                  %Test if a is equal to 5 
+false 
+a == 20                 %Test if a is equal to 10 
+true 
+a &gt;= 5                  %Test if a is greater than or equal to 5 
+true 
+a  1 &amp;&amp; a ~= 10         %Test if a is greater than 1 AND 
+false                   %not equal to 10 
+a &gt; 1 || a ~= 5         %Test if a is great
+</code></pre><h3 id="for-loops">For Loops</h3>
+<pre tabindex="0"><code>for k = 1:10 
+   disp(k); 
+end
+</code></pre><h3 id="conditional-statements">Conditional Statements</h3>
+<pre tabindex="0"><code>if a &gt; 90 
+   disp('Greater than 90'); 
+elseif a == 90 
+   disp('a is 90'); 
+else 
+   disp('None of the conditions is mets');
+end
+</code></pre><h3 id="while-loops">While Loops</h3>
+<pre tabindex="0"><code>k = 0; 
+while k &lt; 5
+    k = k + 1;
+end
+</code></pre><h3 id="functions">Functions</h3>
+<pre tabindex="0"><code>function [a, b] = testfct(x, y) 
+     a = x + y; 
+     b = x * y; 
+end testfct(2, 3)      %Call function in script or command window
+Function Handles
+sqr = a(n) n.^2; 
+x = sqr(3)             %Outputs 9
+</code></pre><h3 id="plotting-and-subplot">Plotting and Subplot</h3>
+<pre tabindex="0"><code>x = linspace(-5*pi, 5*pi, 1000); 
+y1 = sin(x); 
+y2 = cos(x); 
+plot(x, y1, 'g-', 'LineWidth',3);    % Plot black sin(x) curve 
+hold on                              % Adding additional curve 
+plot(x, y2, 'r-', 'LineWidth',3);    % Plot red cos(x) curve 
+grid on 
+set(gca,'fontsize',20) 
+% Set the axis limits 
+axis([-5*pi, 5*pi, -1.5, 1.5]) 
+% Add axis labels 
+xlabel('x', 'FontSize',20); 
+ylabel('y', 'FontSize',20); 
+% Add a title 
+title('A plot of cos(x) and sin(x)', 'FontSize', 20); 
+% Add a legend 
+legend('sin(x)', 'cos(x)');
+ ----- 
+% Code for Subplots 
+x = linspace(0,10,50); 
+y = rand(50,1); 
+subplot(2,2,1), plot(x,sin(x),'Color','red','LineWidth',3) set(gca,'fontsize',14) 
+axis([0,2*pi,-1,1]), axis square 
+subplot(2,2,2), plot(x,cos(x),'Linewidth',3,'Color','blue') set(gca,'fontsize',14) 
+axis([0,2*pi,-1,1]), axis square 
+subplot(2,2,3:4) 
+y2 = rand(50,1); plot(x,y2,'LineWidth',3) 
+set(gca,'fontsize',14)
+</code></pre><p>The resulting plot looks like :
+<img src="plot.png" alt="plot"></p>
+
+</article>
+</div>
+
+
+                
+                    <div class="my-8 sm:-mx-5">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sinx-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+                
+            </div>
+<footer class="my-8 w-full text-center text-xs">
+    <article>Sinan Thahir © 2022</article>
+</footer>
+
+</main>
+<script src="/js/header.0b11855b871cb4d10c6c07b6723b9209f5c2bc9100735ab6ff47c8f9b76bb3d6ae41b488083b5fb15697987334039eb651b25c83228c29ac48a2bc168db8a894.js" integrity="sha512-CxGFW4cctNEMbAe2cjuSCfXCvJEAc1q2/0fI&#43;bdrs9auQbSICDtfsVaXmHM0A562UbJcgyKMKaxIorwWjbiolA=="></script>
+
+
+
+    <script src="/js/zooming.6465dea09c944f54e6047dd74be6d405f3f2d8dfef550bcc6b7c95bf49b0f3f51315c9c7bd4fe7cbce37f40205ccf2aa3a306ebb59f98208e92b91dfafb496e7.js" integrity="sha512-ZGXeoJyUT1TmBH3XS&#43;bUBfPy2N/vVQvMa3yVv0mw8/UTFcnHvU/ny8439AIFzPKqOjBuu1n5ggjpK5Hfr7SW5w=="></script>
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    <script src="/js/search-en-us.min.1a0c7b6bac73d6cea79c3744ec1241b1daa399a1c377f1938b810e5575d253f795ed74ff374f3519052b1702f39ad0e7ddbdc5e0401b5ed761b0c18e8c7b044e.js" integrity="sha512-Ggx7a6xz1s6nnDdE7BJBsdqjmaHDd/GTi4EOVXXSU/eV7XT/N081GQUrFwLzmtDn3b3F4EAbXtdhsMGOjHsETg=="></script>
+
+
+
+
+    
+        <script src="/js/code-copy-btn.3c5f29aad3ef5a0613149d1e108f38f08a5194f4f38774d20f0993208d436103657256e910a6a3ab9e8b70b537bfb82b6b3915b30bac5f39bef8259422ea5f62.js" integrity="sha512-PF8pqtPvWgYTFJ0eEI848IpRlPTzh3TSDwmTII1DYQNlclbpEKajq56LcLU3v7grazkVswusXzm&#43;&#43;CWUIupfYg=="></script>
+    
+
+</body>
+</html>

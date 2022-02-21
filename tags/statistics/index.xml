@@ -128,5 +128,555 @@ Most of the Youtube series choosed are from &lt;a href=&#34;https://www.youtube.
 </description>
     </item>
     
+    <item>
+      <title>Matlab Modeling and Simulation : Cheat Sheet &amp; Samples</title>
+      <link>https://sinanthahir.github.io/blogs/matlab-cheatsheet-simulation/</link>
+      <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/blogs/matlab-cheatsheet-simulation/</guid>
+      <description>&lt;h2 id=&#34;matlab-modeling-and-simulation--cheat-sheet--samples&#34;&gt;Matlab Modeling and Simulation : Cheat Sheet &amp;amp; Samples&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;hea.jpeg&#34; alt=&#34;covermat&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Matlab&lt;/strong&gt;, is a high-performance language which assimilates computation, visualization and programming in a single environment. The name MATLAB stands for &lt;code&gt;matrix laboratory&lt;/code&gt;. MATLAB was originally written to provide easy access to matrix software developed by the &lt;code&gt;LINPACK&lt;/code&gt; and &lt;code&gt;EISPACK&lt;/code&gt; projects, which together represent the &lt;em&gt;state-of-the-art&lt;/em&gt; in software for matrix computation.&lt;/p&gt;
+&lt;p&gt;MATLAB is an &lt;em&gt;interactive system&lt;/em&gt; whose basic data element is an array that does not require dimensioning. This allows you to solve many technical computing problems, especially those with matrix and vector formulations, in a fraction of the time it would take to write a program in a scalar noninteractive language such as &lt;code&gt;C&lt;/code&gt; or &lt;code&gt;Fortran&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;MATLAB® is widely used in different areas of applied mathematics, in education and research and in numerous industries. This software finds its wide applications in different domains of engineering such as:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Electronics engineers mainly use MATLAB® for designing more efficient devices that are smaller in size and can integrate wireless communications, audio, video, and other attributes.&lt;/li&gt;
+&lt;li&gt;In electrical engineering, the application of this program is to examine and simulate momentary phenomena in power systems.&lt;/li&gt;
+&lt;li&gt;Mechanical engineers need MATLAB® for scrutiny of problems in control systems, mechanical vibrations, basic engineering mechanics, electrical circuits, statics and dynamics and numerical methods.&lt;/li&gt;
+&lt;li&gt;It is used to model and simulate physical problems in the field of chemical engineering.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;cheat-sheet&#34;&gt;Cheat Sheet&lt;/h2&gt;
+&lt;p&gt;Small variables like x and y will be either row or column vectors and A will always be a matrix.&lt;/p&gt;
+&lt;h3 id=&#34;basic-commands&#34;&gt;Basic Commands&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;clc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Clear command window&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;clear (all)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Clear all variables&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;close all&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Close all plots&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;clf&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Clear all plots&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;doc command&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Extensive help page for command&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;help command&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Quick help page for command&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;%This is a command&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Indicates a comment&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;a=5;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Semicolon suppress ouput&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;whos&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;List all variables defined&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;disp(&#39;text&#39;)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Print text&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;save &#39;file.mat&#39;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Save variables to file.mat&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;load &#39;file.mat&#39;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Load variables from file.mat&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;diary on&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Record input/output to file diary&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;keyboard-shortcuts&#34;&gt;Keyboard Shortcuts&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Shortcuts&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Help/documentation for highlighted function&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F5&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Run Code&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F9&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Run highlighted code&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F10&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Run code line&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F11&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Run code line, enter functions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F12&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Insert break point&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+D&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Open Highlighted codes file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+R&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Comment code&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+T&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Uncomment code&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+N&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Open new script&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+W&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Close script&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Abort operation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;entries-of-matrices-and-vectors&#34;&gt;Entries of Matrices and Vectors&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Entries&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;abs(x)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The absolute value of &lt;em&gt;x&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;eps&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Floating point accuracy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;1e6&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;10^6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;sum(x)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Sums elements in &lt;em&gt;x&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;round&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Rounds to the nearest integer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ceil&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Rounds to the nearest integer greater than or equal to that element&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;fix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Rounds to the nearest integer toward zero&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;floor&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Rounds to the nearest integer less than or equal to that element&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;cell-manipulation&#34;&gt;Cell Manipulation&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Manipulation&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;x = cell(a, b)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;a * b cell array&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;x{n,m}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Access cell element n,m&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;cell2mat(x)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Transforms cell to matrix&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;manipulation-of-variables&#34;&gt;Manipulation of Variables&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Manipulation&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;a=500&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Define variables &lt;em&gt;a&lt;/em&gt; to be 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;x=[3,1,4]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Set &lt;em&gt;x&lt;/em&gt; to be the row vector [3,1,4]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;x=[3;1;4]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Set &lt;em&gt;x&lt;/em&gt; to be the column vector [3,1,4]^&lt;em&gt;T&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;x(2)=7&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Change &lt;em&gt;x&lt;/em&gt; from [3,1,4] to [3,7,4]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;A(2,1)=0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Change A`2,1 from 5 to 0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;basic-arithmetic-and-functions&#34;&gt;Basic Arithmetic and Functions&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Operations&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;1*2&lt;/code&gt;,&lt;code&gt;3+4&lt;/code&gt;,&lt;code&gt;5-6&lt;/code&gt;,&lt;code&gt;7/8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Multiply, add, subtract and divide&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;2^8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;compute 2^8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;sqrt(16)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;compute square root of 16&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;log(5)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;compute ln(5)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;sin(2*pi/6)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Compute sin(60)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;operations-on-matrices-and-vectors&#34;&gt;Operations on Matrices and Vectors&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Operations&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;x + 5&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Add 5 to every element of &lt;em&gt;x&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;x + y&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Elementwise addition of two vectors &lt;em&gt;x&lt;/em&gt; and &lt;em&gt;y&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;10 * y&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Multiply every element of &lt;em&gt;y&lt;/em&gt; by 10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;A * y&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Product of a matrix and vector&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;A * B&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Product of two matrices&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;A .* B&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Element-wise product of two matrices&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;A ^ 4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Square matrix &lt;strong&gt;A&lt;/strong&gt; to the fourth power&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;A .^ 4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Every element of &lt;strong&gt;A&lt;/strong&gt; to the fourth power&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;cos(A)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Compute the cosine of every element of &lt;strong&gt;A&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;abs(A)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Compute the absolute values of every element of &lt;strong&gt;A&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;A&#39;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Transpose of &lt;strong&gt;A&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;det(A)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Compute the determinant of &lt;strong&gt;A&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;size(A)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Get the size of &lt;strong&gt;A&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;data-import--export&#34;&gt;Data Import &amp;amp; Export&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;xlsread&lt;/code&gt;/&lt;code&gt;xlswrite&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Spreadsheets (&lt;em&gt;.xls,.xlsm&lt;/em&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;load/save -ascii&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Text files (&lt;em&gt;.txt,.csv&lt;/em&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;load/save&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Matlab files (&lt;em&gt;.m&lt;/em&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;imread/imwrite&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Image files&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;solving-linear-equations&#34;&gt;Solving linear equations&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;inv(A)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Compute the inverse &lt;strong&gt;A^-1&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;eig(A)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Compute the eigenvalue of &lt;em&gt;&lt;strong&gt;A&lt;/strong&gt;&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;[L,U,P] = lu(A)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The LU factorization &lt;em&gt;&lt;strong&gt;PA = LU&lt;/strong&gt;&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;[V,D] = eig(A)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;&lt;strong&gt;V&lt;/strong&gt;&lt;/em&gt; are the eigenvectors of A, and the diagonals &lt;em&gt;&lt;strong&gt;diag(D)&lt;/strong&gt;&lt;/em&gt; are the eigenvalues of A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;A\b&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Compute the solution &lt;em&gt;x&lt;/em&gt; to &lt;strong&gt;A&lt;em&gt;x&lt;/em&gt;=b&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;plotting&#34;&gt;Plotting&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;plot(x,y)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Plot &lt;em&gt;y&lt;/em&gt; versus &lt;em&gt;x&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;loglog(x,y)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Plot &lt;em&gt;y&lt;/em&gt; versus &lt;em&gt;x&lt;/em&gt; on a log-log scale&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;semilogx(x,y)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Plot &lt;em&gt;y&lt;/em&gt; versus &lt;em&gt;x&lt;/em&gt; with &lt;em&gt;x&lt;/em&gt; on a log scale&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;axis equal&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Force the &lt;em&gt;y&lt;/em&gt; and &lt;em&gt;x&lt;/em&gt; axes to be scaled equally&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;title(&#39;A Title&#39;)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Add a title to the plot&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;xlabel(&#39;x text&#39;)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Add a label to the &lt;em&gt;x&lt;/em&gt; axis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;legend(&#39;foo&#39;, &#39;bar&#39;)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Label two curves for the plot&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;grif on/off&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Add a grid to the plot&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;subplot(a,b,c)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;For multiple figures in one plot&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;hold on&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Retains current figure when adding new stuff&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;set(fig1, &#39;LineWidth&#39;, 2)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Change line width&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;set(fig1, &#39;LineStyle&#39;, &#39;-&#39;)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Change to dot marker&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;set(fig1, &#39;Marker&#39;, &#39;.&#39;)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Change marker type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;debugging&#34;&gt;Debugging&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;tic/toc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Start/Stop Timer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;try/catch&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Good to track errors&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;dbclear&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Clear breakpoints&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;break&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Terminate execution of for/while loop&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;logicals&#34;&gt;Logicals&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;a = 20;                 %Assign a the value of 10 
+a == 5                  %Test if a is equal to 5 
+false 
+a == 20                 %Test if a is equal to 10 
+true 
+a &amp;gt;= 5                  %Test if a is greater than or equal to 5 
+true 
+a  1 &amp;amp;&amp;amp; a ~= 10         %Test if a is greater than 1 AND 
+false                   %not equal to 10 
+a &amp;gt; 1 || a ~= 5         %Test if a is great
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;for-loops&#34;&gt;For Loops&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;for k = 1:10 
+   disp(k); 
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;conditional-statements&#34;&gt;Conditional Statements&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if a &amp;gt; 90 
+   disp(&#39;Greater than 90&#39;); 
+elseif a == 90 
+   disp(&#39;a is 90&#39;); 
+else 
+   disp(&#39;None of the conditions is mets&#39;);
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;while-loops&#34;&gt;While Loops&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;k = 0; 
+while k &amp;lt; 5
+    k = k + 1;
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;functions&#34;&gt;Functions&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function [a, b] = testfct(x, y) 
+     a = x + y; 
+     b = x * y; 
+end testfct(2, 3)      %Call function in script or command window
+Function Handles
+sqr = a(n) n.^2; 
+x = sqr(3)             %Outputs 9
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;plotting-and-subplot&#34;&gt;Plotting and Subplot&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;x = linspace(-5*pi, 5*pi, 1000); 
+y1 = sin(x); 
+y2 = cos(x); 
+plot(x, y1, &#39;g-&#39;, &#39;LineWidth&#39;,3);    % Plot black sin(x) curve 
+hold on                              % Adding additional curve 
+plot(x, y2, &#39;r-&#39;, &#39;LineWidth&#39;,3);    % Plot red cos(x) curve 
+grid on 
+set(gca,&#39;fontsize&#39;,20) 
+% Set the axis limits 
+axis([-5*pi, 5*pi, -1.5, 1.5]) 
+% Add axis labels 
+xlabel(&#39;x&#39;, &#39;FontSize&#39;,20); 
+ylabel(&#39;y&#39;, &#39;FontSize&#39;,20); 
+% Add a title 
+title(&#39;A plot of cos(x) and sin(x)&#39;, &#39;FontSize&#39;, 20); 
+% Add a legend 
+legend(&#39;sin(x)&#39;, &#39;cos(x)&#39;);
+ ----- 
+% Code for Subplots 
+x = linspace(0,10,50); 
+y = rand(50,1); 
+subplot(2,2,1), plot(x,sin(x),&#39;Color&#39;,&#39;red&#39;,&#39;LineWidth&#39;,3) set(gca,&#39;fontsize&#39;,14) 
+axis([0,2*pi,-1,1]), axis square 
+subplot(2,2,2), plot(x,cos(x),&#39;Linewidth&#39;,3,&#39;Color&#39;,&#39;blue&#39;) set(gca,&#39;fontsize&#39;,14) 
+axis([0,2*pi,-1,1]), axis square 
+subplot(2,2,3:4) 
+y2 = rand(50,1); plot(x,y2,&#39;LineWidth&#39;,3) 
+set(gca,&#39;fontsize&#39;,14)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The resulting plot looks like :
+&lt;img src=&#34;plot.png&#34; alt=&#34;plot&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
