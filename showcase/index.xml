@@ -85,6 +85,48 @@
     </item>
     
     <item>
+      <title>Thermal Performance Investigation</title>
+      <link>https://sinanthahir.github.io/showcase/ticphe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/showcase/ticphe/</guid>
+      <description>&lt;h2 id=&#34;thermal-performance-investigation-of-a-corrugated-plate-heat-exchanger-ticphe&#34;&gt;Thermal Performance Investigation of a Corrugated Plate Heat Exchanger (TICPHE)&lt;/h2&gt;
+
+
+
+
+
+
+    
+    
+
+
+&lt;div class=&#34;rounded p-3 my-6&#34; style=&#34;background-color: #d9edf7; color: #31708f;&#34; &gt;
+    
+Guided by Benny T.K, Asst. Professor, Rajadhani Institute of Engineering and Technology, Attingal
+
+&lt;/div&gt;
+
+&lt;h4 id=&#34;objective&#34;&gt;Objective&lt;/h4&gt;
+&lt;p&gt;Compact heat exchangers have become an essential necessity for power production and multi other purposes on a daily basis. The corrugated plate exchangers (CPHE) are well known for their high thermal performance. This study compares two CPHE with angle 70/70 (deg) and 50/50 (deg) with basic CPHE with angle 60/60.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;It was our first time, engage in such a complex design and simulation featured model or to say for an research orientation. Each and every day, we will go for a new design from scratch and simulate in varying conditions; and above all that the numerical model expressions. Every night we will be on g-meet, discussing reference journals, user manuals to binge cringes. It was hard but fun.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;tpicover.png&#34; alt=&#34;header&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Amidst on the pandemic, &lt;a href=&#34;https://www.linkedin.com/in/ACoAACx9sgMB98uNwtVk8mrCuD-Y8IXt1r9wQhw&#34;&gt;Ramzy Rahim&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/ACoAADNR2FIBk32M2amvkrA5r1EDX_flxYUSnIA&#34;&gt;Akhil A&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/ACoAADNovH0BKJvV_fGAoJ8zCihIA7PU10jQK2Y&#34;&gt;Devakrishna A&lt;/a&gt; and I under the guidance of Asst. &lt;a href=&#34;https://www.linkedin.com/in/benny-k-a1794730&#34;&gt;Prof Benny TK&lt;/a&gt; was researching on the thermal performance character inside the CPHE for turbulent flow conditions as for our Final year Bachelors Degree Project. The work was assessed in the presence of Dr.Bindu S, HOD, Asst. professor, Mr. &lt;a href=&#34;https://www.linkedin.com/in/harisankarme&#34;&gt;Harishanker U.S&lt;/a&gt;, Asst. Professor, Project coordinator and other faculties of our department.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;methodology&#34;&gt;Methodology&lt;/h4&gt;
+&lt;p&gt;The different CPHE models are designed using &lt;code&gt;Solidworks 2020&lt;/code&gt;, Flow and Thermal Analysis was done through &lt;code&gt;Ansys Workbench (Fluent)&lt;/code&gt;, Analytical Calculation are carried out on &lt;code&gt;MS Excel&lt;/code&gt;, Infographics are made up on &lt;code&gt;Mathlab&lt;/code&gt; and  Work scheduling are done using &lt;code&gt;Notion&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;results&#34;&gt;Results&lt;/h4&gt;
+&lt;p&gt;The overall tests have been conducted on CPHEs for two symmetric chevron angles (β) of 50/50 and 70/70. Data are obtained for steady state, single phase (water-water), counter arrangements, and for Reynolds number (Re) ranges from 500 to 2500, sophisticated mesh technique have been adopted to develop the mesh for the plates and the fluid between the plates. An appropriate grid refinement test has been carried out for the accuracy of the numerical results. The result have been validated with benchmark experimental and numerical data. A realizable k – ε turbulence model with scalable wall treatment found to provide the most consistent and accurate prediction of the thermal performance of CPHE. The numerical result showed that the effectiveness of the CPHE 50/50 is higher than 60/60 but the CPHE 70/70 shows less effectiveness than other.&lt;/p&gt;
+&lt;h4 id=&#34;publication&#34;&gt;Publication&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;certi.jpg&#34; alt=&#34;cert&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The result came to a much dependable solution on each variance of flow parameters and are explained in the &lt;em&gt;Journal(Paper)&lt;/em&gt; Published on &lt;strong&gt;&lt;a href=&#34;https://www.irjet.net/archives/V8/i7/IRJET-V8I7245.pdf&#34;&gt;IRJET Journal Volume: 8 Issue: 7&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Industrial Product Designs</title>
       <link>https://sinanthahir.github.io/showcase/industrial-products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
