@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 19 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Matlab Modeling and Simulation : Cheat Sheet &amp; Samples</title>
-      <link>https://sinanthahir.github.io/blogs/matlab-cheatsheet-simulation/</link>
+      <link>https://sinanthahir.github.io/notes/matlab-cheatsheet-simulation/</link>
       <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://sinanthahir.github.io/blogs/matlab-cheatsheet-simulation/</guid>
+      <guid>https://sinanthahir.github.io/notes/matlab-cheatsheet-simulation/</guid>
       <description>&lt;h2 id=&#34;matlab-modeling-and-simulation--cheat-sheet--samples&#34;&gt;Matlab Modeling and Simulation : Cheat Sheet &amp;amp; Samples&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;hea.jpeg&#34; alt=&#34;covermat&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Matlab&lt;/strong&gt;, is a high-performance language which assimilates computation, visualization and programming in a single environment. The name MATLAB stands for &lt;code&gt;matrix laboratory&lt;/code&gt;. MATLAB was originally written to provide easy access to matrix software developed by the &lt;code&gt;LINPACK&lt;/code&gt; and &lt;code&gt;EISPACK&lt;/code&gt; projects, which together represent the &lt;em&gt;state-of-the-art&lt;/em&gt; in software for matrix computation.&lt;/p&gt;

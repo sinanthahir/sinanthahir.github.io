@@ -1,0 +1,403 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="h-full w-full font-sans" lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://sinanthahir.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Machine Learning for Recognizing Handwritten Digits - Sin(x)</title>
+
+    
+    <meta name="description" content="Recognizing handwritten text is a problem that traces back to the first automatic machines that needed to recognize individual characters in handwritten documents. Think about, for example, the ZIP codes on letters at the post office and the automation needed to recognize these five digits." />
+    
+
+    
+
+    
+    <meta name="author" content="Sinan Thahir" />
+    
+
+    
+        <meta property="og:title" content="Machine Learning for Recognizing Handwritten Digits" />
+<meta property="og:description" content="Recognizing handwritten text is a problem that traces back to the first automatic machines that needed to recognize individual characters in handwritten documents. Think about, for example, the ZIP codes on letters at the post office and the automation needed to recognize these five digits." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sinanthahir.github.io/notes/recognizing-handwritten-digits/" /><meta property="og:image" content="https://sinanthahir.github.io/site-feature-image.png"/><meta property="article:section" content="notes" />
+<meta property="article:published_time" content="2021-11-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-11-04T00:00:00+00:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sinanthahir.github.io/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Machine Learning for Recognizing Handwritten Digits"/>
+<meta name="twitter:description" content="Recognizing handwritten text is a problem that traces back to the first automatic machines that needed to recognize individual characters in handwritten documents. Think about, for example, the ZIP codes on letters at the post office and the automation needed to recognize these five digits."/>
+
+    <link rel="stylesheet" href="/css/styles.min.7a1a61a7e69df7aaa60ca4572a6699f3e3751b22d1fd887eda416ab14a9175a618aea8fcf4180c2620f455e7181d55667e6572cdf0807e1bec4138d0228da709.css" integrity="sha512-ehphp+ad96qmDKRXKmaZ8+N1GyLR/Yh+2kFqsUqRdaYYrqj89BgMJiD0VecYHVVmfmVyzfCAfhvsQTjQIo2nCQ==">
+
+
+
+    
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head><body class="flex flex-col items-center w-full">
+        <main class="w-full sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-5/12 m-auto px-6"><header class="mt-9 mb-8">
+    <div class="flex justify-between items-center">
+        <div class="flex items-center">
+            <input id="navbar_btn" class="hidden" type="checkbox">
+            <label for="navbar_btn" class="menu-btn mr-4 items-center flex xl:hidden">
+                <span class="navicon"></span>
+            </label>
+            <a href="/" class="font-bold text-lg xl:text-2xl mr-auto">Sin(x)</a>
+        </div>
+
+        <div class="flex items-center">
+            <div class="cursor-pointer ml-2">
+                <svg id="dark_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg></svg>
+                <svg id="light_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><g><path d="M14,2c1.82,0,3.53,0.5,5,1.35C16.01,5.08,14,8.3,14,12s2.01,6.92,5,8.65C17.53,21.5,15.82,22,14,22C8.48,22,4,17.52,4,12 S8.48,2,14,2z"/></g></g></g></svg></svg>
+            </div>
+
+            
+
+            
+                <div class="ml-2 sep hidden sm:block"></div>
+                <div class="ml-2 relative flex items-center">
+                    <svg id="search_btn" class="cursor-pointer" width="18px" height="18px" viewBox="2 0 20 20"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></svg><div id="search_menu_wrapper" class="hidden justify-center fixed top-0 left-0 w-full h-full z-40">
+    <div id="search_menu" class="fixed flex flex-col w-full h-full sm:h-auto sm:top-24 sm:bottom-24 rounded-none sm:rounded-md sm:w-120 z-50">
+        <div class="flex min-h-10 shadow-md">
+            <div class="flex flex-grow">
+                <input id="search_menu_input" class="flex-grow focus:outline-none px-4 rounded-tl-md" type="text" placeholder=
+                Search&#32;Posts>
+            </div>
+            <div id="search_menu_close_btn" class="flex items-center justify-center w-10 rounded-tr-md cursor-pointer">
+                <svg width="14px" height="14px" viewBox="3 3 18 18"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></svg>
+            </div>
+        </div>
+        <div id="search_menu_results" class="flex-grow overflow-y-auto">
+        </div>
+    </div>
+</div>
+</div>
+            
+        </div>
+    </div>
+
+    <nav id="navbar" class="mt-3 hidden xl:block"><ul class="flex"><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/about/">About</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/case-studies/">Case Studies</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/credentials/">Credentials</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/nerd-stuff/">Nerd Stuff</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium insection">
+                        <a href="/notes/">Notes</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/showcase/">Showcase</a>
+                    </li></ul>
+    </nav>
+
+    <nav id="navbar_sm" class="mt-2 hidden">
+        <ul>
+            
+                <li class="text-sm mt-2">
+                    <a href="/about/">About</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/case-studies/">Case Studies</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/credentials/">Credentials</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/nerd-stuff/">Nerd Stuff</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/notes/">Notes</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/showcase/">Showcase</a></li>
+            
+        </ul>
+
+        <hr class="my-4">
+    </nav>
+</header>
+<div id="content" class="my-8">
+                
+
+    <div class="my-7">
+<article >
+    <h2 id="machine-learning-for-recognizing-handwritten-digits">Machine Learning for Recognizing Handwritten Digits</h2>
+<p><img src="00head.jpeg" alt="cover"></p>
+<p><strong>Machine learning</strong> is a field of <em>artificial intelligence</em> in which a system is designed to learn automatically given a set of input data. After the system has learnt (we say that the system has been trained), we can use it to make predictions for new data, unseen before. This approach makes it possible to solve complex problems which are difficult or impossible to solve with traditional sequential programming.</p>
+<p><strong>Recognizing handwritten text</strong> is a problem that traces back to the first automatic machines that needed to recognize individual characters in handwritten documents. Think about, for example, the ZIP codes on letters at the post office and the automation needed to recognize these five digits. Perfect recognition of these codes is necessary to sort mail automatically and efficiently. Included among the other applications that may come to mind is <strong>OCR (Optical Character Recognition)</strong> software. OCR software must read handwritten text, or pages of printed books, for general electronic documents in which each character is well defined. But the problem of handwriting recognition goes farther back in time, more precisely to the early 20th Century (the 1920s), when Emanuel Goldberg (1881–1970) began his studies regarding this issue and suggested that a statistical approach would be an optimal choice.</p>
+
+
+
+
+
+
+    
+    
+
+
+<div class="rounded p-3 my-6" style="background-color: #d9edf7; color: #31708f;" >
+    
+In this project, our goal is to get started hands on with machine learning to recognize this handwrittens, so I’m only going to give you a simplified explanation for now.
+
+</div>
+
+<p><img src="train-network.png" alt="network"></p>
+<p>The above network displays a network of successive training sets, which consists of <em>the image of a digit &amp; a label, which tells us what the image truly represents.</em></p>
+<p>At first, the first image is processed by the neural network and produces an answer: <code>that is a 9</code>. The connections of neurons in the network be in randomly stated and is providing anything useful, just a random answer.</p>
+<p>The answer is compared to the label. Here, the value of <code>(9)</code> is actually different from the label, i.e the value <code>(3)</code>. Some feedback is given back such that the network can improve, favoring in tend to give a correct answer.</p>
+<p>Then the next example are considered and the neural network learns in such iterative way.</p>
+<h2 id="aim">Aim:</h2>
+<p>The primary aim of this project involves predicting a numeric value, and then reading and interpreting an image that uses a handwritten font.</p>
+<h2 id="hypothesis">Hypothesis:</h2>
+<p>The Digits data set of the scikit-learn library provides numerous datasets that are useful for testing many problems of data analysis and prediction of the results. Some Scientist claims that it predicts the digit accurately 95% of the times. Perform data Analysis to accept or reject this Hypothesis.</p>
+<blockquote>
+<p>Here, I will be using Anaconda Kernel Interpreted VS Code Environment and using Python libraries like Matplotlib, Seaborn, Scikit-Learn.</p>
+</blockquote>
+<h2 id="the-digits-dataset">The Digits Dataset:</h2>
+<p>The scikit-learn library provides many datasets that are useful for testing many problems of data analysis and prediction of the results. Also in this case there is a dataset of images called Digits. This dataset comprises 1,797 images that are 8x8 pixels in size. Each image is a handwritten digit in grayscale.</p>
+<h3 id="importing-dataset">Importing Dataset</h3>
+<p>Import datasets module from sklearn library and load the digits dataset using the <code>load_digits()</code> function.</p>
+<pre tabindex="0"><code>from sklearn import datasets
+digits = datasets.load_digits()
+</code></pre><h3 id="description-of-dataset">Description of Dataset</h3>
+<p>After loading the dataset, we can read the information about the dataset by calling the <code>DESCR</code> attribute.</p>
+<pre tabindex="0"><code>print(digits.DESCR)
+</code></pre><p>The textual description of the dataset, the authors who contributed to its creation, and the references will appear as shown in the output.</p>
+<p><img src="01.png" alt="desc_out"></p>
+<p>Each dataset in the scikit-learn library has a field containing all the information.</p>
+<h3 id="targets">Targets</h3>
+<p>The numerical values represented by images, i.e., the targets, are contained in the <code>digit.targets</code> array.</p>
+<pre tabindex="0"><code>digits.target
+</code></pre><pre tabindex="0"><code>Output:
+array([0, 1, 2, ..., 8, 9, 8])
+</code></pre><h3 id="dataset-shape">Dataset Shape</h3>
+<p><strong>Dimensions</strong> of the dataset can be obtained using <code>data.shape()</code> function.</p>
+<pre tabindex="0"><code>digits.data.shape
+</code></pre><pre tabindex="0"><code>Output:
+(1797, 64)
+</code></pre><p>The output shows that the dataset has 1797 images of 8x8 size(i.e, 8 * 8 = 64 px). In other words, this array could be represented in 3D as a pile of images with 8x8 pixels each.</p>
+<h3 id="images-of-the-handwritten-digits">Images of the handwritten digits</h3>
+<p>The images of the handwritten digits are contained in an array. Each element of this array is an image that is represented by an 8x8 matrix of numerical values that correspond to grayscale from white, with a value of 0, to black, with the value 15.</p>
+<p>Let’s look at the data of the first 8x8 image. Each slot in the array corresponds to a pixel, and the value in the slot is the amount of black in the pixel.</p>
+<pre tabindex="0"><code>digits.images[0]
+</code></pre><p><img src="dig-image.png" alt="digits"></p>
+<h3 id="visualization-of-an-array">Visualization of an array</h3>
+<p>We can visually check the contents of this result. The following steps can get it done</p>
+<ol>
+<li>Import <code>pyplot</code> module which is under matplotlib as <code>plt</code>.</li>
+<li>The <code>imshow()</code> function is used to display data as an image; i.e. on a 2D regular raster.</li>
+<li><code>cmap = gray_r</code> displays a grayscale image.</li>
+<li><code>interpolation= ‘nearest’</code> displays an image without trying to interpolate between pixels if the display resolution is not the same as the image resolution.</li>
+<li>The <code>title()</code> function is used to display the title on the graph.</li>
+</ol>
+<pre tabindex="0"><code>import matplotlib.pyplot as plt
+plt.imshow(digits.images[0], cmap=plt.cm.gray_r, interpolation='nearest')
+plt.title('one of the 1797 handwritten digits')
+plt.savefig('plot1.png', dpi=100, bbox_inches='tight')
+</code></pre><p>By running this command, we will obtain the grayscale image as follows:
+<img src="gigi01.png" alt="sing-digi"></p>
+<h3 id="visualization-of-10-digits">Visualization of 10 digits</h3>
+<p>Using the NumPy and matplotlib libraries, we can display each digit from 0 to 9 which are in the form of an array as images.</p>
+<ol>
+<li>The <code>figure()</code> function in the pyplot module of the matplotlib library is used to create a new <strong>figure</strong> with a specified size of (15,4).</li>
+<li><code>subplots_adjust(hspace=0.8)</code> is used to adjust the space between the rows of the subplots.</li>
+<li>Combine two lists using the <code>zip()</code> function for easier handling inside the plotting loop.</li>
+<li><code>enumerate()</code> method adds a counter to an iterable and returns it. The returned object is a <code>enumerate</code> object.</li>
+<li><code>subplot()</code> function is used to add a subplot to a current figure at the specified grid position.</li>
+</ol>
+<pre tabindex="0"><code>import numpy as np 
+plt.figure(figsize=(15,4))
+plt.subplots_adjust(hspace=0.8)images_and_labels = list(zip(digits.images, digits.target)) 
+for index, (image, label) in enumerate(images_and_labels[:10]):                                    
+    plt.subplot(2, 5, index + 1)    
+    plt.imshow(image, cmap=plt.cm.gray_r, interpolation='nearest') 
+    plt.title('Training: %i' % label, fontsize =12)
+plt.savefig('plot2.png', dpi=300, bbox_inches='tight')
+</code></pre><p><img src="alldigi.png" alt="all"></p>
+<h3 id="flatten-the-input-images">Flatten the input images</h3>
+<p>The inputs are 8x8 grayscale images. we can produce a flat array of 64-pixel values so that each pixel corresponds to a column for the classifier.</p>
+<ol>
+<li><code>len()</code> function gives the number of images in the dataset.</li>
+<li><code>reshape()</code> function returns an array containing the same data with a new shape.</li>
+</ol>
+<pre tabindex="0"><code>n = len(digits.images)
+print(n)
+data = digits.images.reshape((n, -1))
+</code></pre><pre tabindex="0"><code>Output:
+1797
+</code></pre><p>It was reported that the dataset is a training set consisting of 1,797 images. We determined that it is true.</p>
+<h3 id="the-machine-learning-model">The Machine Learning Model</h3>
+<p>An estimator that is useful in this case is sklearn.svm.SVC, which uses the technique of <strong>Support Vector Classification (SVC)</strong>.</p>
+<p><strong>“Support Vector Machine” (SVM)</strong> is a supervised machine learning algorithm that is mostly used in classification problems.</p>
+<blockquote>
+<p>You can read more about SVM model from <a href="https://scikit-learn.org/stable/modules/svm.html">Scikit-Learn’s Official Document</a>.</p>
+</blockquote>
+<p>Import the SVM module of the scikit-learn library and create an estimator of SVC type and then choose an initial setting, assigning the values C and gamma generic values.</p>
+<pre tabindex="0"><code>#import svm model
+from sklearn import svm
+
+#Create a SVMClassifier
+svc = svm.SVC(gamma=0.001, C=100.)
+</code></pre><h3 id="split-the-dataset">Split the Dataset</h3>
+<p>once we define a predictive model, we must instruct it with a training and test set. The <strong>training set</strong> is a set of data in which you already know the belonging class and the <strong>test set</strong> is a secondary data set that is used to test a machine learning program after it has been trained on initial training.</p>
+<p>Import <code>train_test_split()</code> function which is used for splitting data arrays into two subsets i.e., into train and test sets.</p>
+<p>Here we have split the data by assigning <strong>0.01</strong> as test size.</p>
+<pre tabindex="0"><code>from sklearn.model_selection import train_test_split
+
+x_train, x_test, y_train, y_test = train_test_split(data, digits.target, test_size=0.01, random_state=0)
+</code></pre><h3 id="train-the-model">Train the model</h3>
+<p>we can train the svc estimator that we defined earlier using the <code>fit()</code> function.</p>
+<p>After a short time, the trained estimator will appear with text output.</p>
+<pre tabindex="0"><code>svc.fit(x_train, y_train)
+</code></pre><pre tabindex="0"><code>Output:
+SVC(C=100.0, gamma=0.001)
+</code></pre><h3 id="test-the-model">Test the model</h3>
+<p>we can test our estimator by making it interpret the digits of the test set using <code>predict()</code> function.</p>
+<pre tabindex="0"><code>y_pred = svc.predict(x_test)
+y_pred
+</code></pre><pre tabindex="0"><code>Output:
+array([2, 8, 2, 6, 6, 7, 1, 9, 8, 5, 2, 8, 6, 6, 6, 6, 1, 0])
+</code></pre><p>We obtain the results in the form of an array.</p>
+<h3 id="visualize-the-test-images">Visualize the test images</h3>
+<p>We can plot the images of the predicted digits from the array using the following code.</p>
+<pre tabindex="0"><code>images_and_predictions = list(zip(x_test,y_pred))
+plt.figure(figsize=(18,5))
+for index, (image, prediction) in enumerate(images_and_predictions[:19]):
+     plt.subplot(2, 9, index + 1)
+     image = image.reshape(8, 8)
+     plt.imshow(image, cmap=plt.cm.gray_r, interpolation='nearest')
+     plt.title('Prediction: %i' % prediction)
+# save the figure
+plt.savefig('plot3.png', dpi=300, bbox_inches='tight')
+</code></pre><p><img src="res.png" alt="result">
+It is able to recognize the handwritten digits and interprete all the digits of the validation set correctly.</p>
+<h3 id="accuracy-of-the-model">Accuracy of the model</h3>
+<p>The accuracy score of the model can be obtained using the <code>score()</code> function.</p>
+<pre tabindex="0"><code>score = svm.score(x_test, y_test)
+</code></pre><pre tabindex="0"><code>Output:
+Accuracy Score: 1.0
+</code></pre><h3 id="confusion-matrix">Confusion Matrix</h3>
+<p>A <strong>confusion matrix</strong> is a table that is often used to describe the performance of a classification model (or “classifier”) on a set of test data for which the true values are known.</p>
+<pre tabindex="0"><code>#For Confusion Matrix
+from sklearn.metrics import confusion_matrix
+import pandas as pd
+import seaborn as sn 
+
+data = confusion_matrix(y_test, y_pred)
+df_cm = pd.DataFrame(data, columns=np.unique(y_test), index = np.unique(y_test))
+df_cm.index.name = 'Actual'
+df_cm.columns.name = 'Predicted' 
+
+plt.figure(figsize = (10,10))
+sn.set(font_scale=1.4)#for label size
+plt.title('Confusion Matrix')
+sn.heatmap(df_cm, annot=True,annot_kws={&quot;size&quot;: 12})# font size
+</code></pre><p><img src="conf-mat.png" alt="confusion">
+A <strong>Classification report</strong> is used to measure the quality of predictions from a <strong>classification</strong> algorithm.</p>
+<p><img src="clas-repo.png" alt="report"></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Given the large number of elements contained in the Digits dataset, we will certainly obtain a very effective model, i.e., one that’s capable of recognizing with good certainty.</p>
+<p>We test the hypothesis by using these cases, each case for a different range of training and validation sets.</p>
+<p><img src="tab11.png" alt="tabular"></p>
+<p>After performing the data analysis on the dataset with three different test cases, we can conclude that the given hypothesis is true i.e., the model predicts the digit accurately 95% of the times.</p>
+<blockquote>
+<p>You can find Source code: <a href="https://github.com/sinanthahir/Internship_suven_technology/blob/main/Recognizing-Handwritten-Digits/handwritten-digits-recognizer.ipynb">github@sinanthahir</a></p>
+</blockquote>
+
+</article>
+</div>
+
+
+                
+                    <div class="my-8 sm:-mx-5">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sinx-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+                
+            </div>
+<footer class="my-8 w-full text-center text-xs">
+    <article>Sinan Thahir © 2022</article>
+</footer>
+
+</main>
+<script src="/js/header.0b11855b871cb4d10c6c07b6723b9209f5c2bc9100735ab6ff47c8f9b76bb3d6ae41b488083b5fb15697987334039eb651b25c83228c29ac48a2bc168db8a894.js" integrity="sha512-CxGFW4cctNEMbAe2cjuSCfXCvJEAc1q2/0fI&#43;bdrs9auQbSICDtfsVaXmHM0A562UbJcgyKMKaxIorwWjbiolA=="></script>
+
+
+
+    <script src="/js/zooming.6465dea09c944f54e6047dd74be6d405f3f2d8dfef550bcc6b7c95bf49b0f3f51315c9c7bd4fe7cbce37f40205ccf2aa3a306ebb59f98208e92b91dfafb496e7.js" integrity="sha512-ZGXeoJyUT1TmBH3XS&#43;bUBfPy2N/vVQvMa3yVv0mw8/UTFcnHvU/ny8439AIFzPKqOjBuu1n5ggjpK5Hfr7SW5w=="></script>
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    <script src="/js/search-en-us.min.1a0c7b6bac73d6cea79c3744ec1241b1daa399a1c377f1938b810e5575d253f795ed74ff374f3519052b1702f39ad0e7ddbdc5e0401b5ed761b0c18e8c7b044e.js" integrity="sha512-Ggx7a6xz1s6nnDdE7BJBsdqjmaHDd/GTi4EOVXXSU/eV7XT/N081GQUrFwLzmtDn3b3F4EAbXtdhsMGOjHsETg=="></script>
+
+
+
+
+    
+        <script src="/js/code-copy-btn.3c5f29aad3ef5a0613149d1e108f38f08a5194f4f38774d20f0993208d436103657256e910a6a3ab9e8b70b537bfb82b6b3915b30bac5f39bef8259422ea5f62.js" integrity="sha512-PF8pqtPvWgYTFJ0eEI848IpRlPTzh3TSDwmTII1DYQNlclbpEKajq56LcLU3v7grazkVswusXzm&#43;&#43;CWUIupfYg=="></script>
+    
+
+</body>
+</html>
