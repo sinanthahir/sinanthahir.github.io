@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 04 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/ml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Machine Learning for Recognizing Handwritten Digits</title>
-      <link>https://sinanthahir.github.io/notes/recognizing-handwritten-digits/</link>
+      <link>https://sinanthahir.github.io/blogs/recognizing-handwritten-digits/</link>
       <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://sinanthahir.github.io/notes/recognizing-handwritten-digits/</guid>
+      <guid>https://sinanthahir.github.io/blogs/recognizing-handwritten-digits/</guid>
       <description>&lt;h2 id=&#34;machine-learning-for-recognizing-handwritten-digits&#34;&gt;Machine Learning for Recognizing Handwritten Digits&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;00head.jpeg&#34; alt=&#34;cover&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Machine learning&lt;/strong&gt; is a field of &lt;em&gt;artificial intelligence&lt;/em&gt; in which a system is designed to learn automatically given a set of input data. After the system has learnt (we say that the system has been trained), we can use it to make predictions for new data, unseen before. This approach makes it possible to solve complex problems which are difficult or impossible to solve with traditional sequential programming.&lt;/p&gt;

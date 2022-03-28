@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/eda/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Experience Analysis through Weather Data : Exploratory Data Analysis</title>
-      <link>https://sinanthahir.github.io/notes/exp-weather-eda/</link>
+      <link>https://sinanthahir.github.io/blogs/exp-weather-eda/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://sinanthahir.github.io/notes/exp-weather-eda/</guid>
+      <guid>https://sinanthahir.github.io/blogs/exp-weather-eda/</guid>
       <description>&lt;h2 id=&#34;experience-analysis-through-weather-data--exploratory-data-analysis&#34;&gt;Experience Analysis through Weather Data : Exploratory Data Analysis&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;cover.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Knowing accurate weather conditions is an important element for individuals as well as organizations. Many businesses rely on weather conditions. It is necessary to have the correct data to get accurate decisions. One type of data that’s easier to find on the internet is Weather data. Many sites provide historical data on many meteorological parameters.&lt;/p&gt;

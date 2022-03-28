@@ -18,16 +18,19 @@
     <loc>https://sinanthahir.github.io/tags/analytics/</loc>
     <lastmod>2021-11-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://sinanthahir.github.io/blogs/</loc>
+    <lastmod>2021-11-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/tags/case-studies/</loc>
+    <lastmod>2021-11-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sinanthahir.github.io/tags/data-science/</loc>
     <lastmod>2021-11-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinanthahir.github.io/notes/recognizing-handwritten-digits/</loc>
+    <loc>https://sinanthahir.github.io/blogs/recognizing-handwritten-digits/</loc>
     <lastmod>2021-11-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/tags/ml/</loc>
-    <lastmod>2021-11-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinanthahir.github.io/notes/</loc>
     <lastmod>2021-11-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/tags/scikit-learn/</loc>
@@ -39,7 +42,7 @@
     <loc>https://sinanthahir.github.io/tags/eda/</loc>
     <lastmod>2021-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinanthahir.github.io/notes/exp-weather-eda/</loc>
+    <loc>https://sinanthahir.github.io/blogs/exp-weather-eda/</loc>
     <lastmod>2021-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/tags/learning/</loc>
@@ -48,7 +51,7 @@
     <loc>https://sinanthahir.github.io/tags/matlab/</loc>
     <lastmod>2021-08-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinanthahir.github.io/notes/matlab-cheatsheet-simulation/</loc>
+    <loc>https://sinanthahir.github.io/blogs/matlab-cheatsheet-simulation/</loc>
     <lastmod>2021-08-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/tags/statistics/</loc>
@@ -57,16 +60,13 @@
     <loc>https://sinanthahir.github.io/tags/visualization/</loc>
     <lastmod>2021-08-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinanthahir.github.io/case-studies/betterdecision-bitteropinions/</loc>
-    <lastmod>2020-09-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinanthahir.github.io/case-studies/</loc>
-    <lastmod>2020-09-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinanthahir.github.io/case-studies/fallinlovewithflaws/</loc>
+    <loc>https://sinanthahir.github.io/notes/is-it-okay-to-show-your-flaws/</loc>
     <lastmod>2020-09-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinanthahir.github.io/case-studies/writebook/</loc>
+    <loc>https://sinanthahir.github.io/notes/</loc>
+    <lastmod>2020-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/notes/writebook/</loc>
     <lastmod>2020-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/about/</loc>
