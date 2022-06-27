@@ -1,0 +1,278 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="h-full w-full font-sans" lang='en-us'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://sinanthahir.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shape Shifting Behaviour of 4D Printed Materials - Sin(x)</title>
+
+    
+    <meta name="description" content="4D printing is based on 3D printing technology, but requires additional stimulus and stimulus-responsive materials. Based on certain interaction mechanisms between the stimulus and smart materials, as well as appropriate design of multilateral structures from mathematical modelling, 4d printing structures evolve as a function of time and exhibit intelligent behavior. Unlike 3D printing, 4D printing is time-dependent, printer-independent, predictable, and targets shape/property/functionality evolution. This allows for self-assembly, multi -functionality and self-repair, which interims helps in easy transportation, reusability, constructions with minimum human involvement, self-adaptability." />
+    
+
+    
+
+    
+    <meta name="author" content="Sinan Thahir" />
+    
+
+    
+        <meta property="og:title" content="Shape Shifting Behaviour of 4D Printed Materials" />
+<meta property="og:description" content="4D printing is based on 3D printing technology, but requires additional stimulus and stimulus-responsive materials. Based on certain interaction mechanisms between the stimulus and smart materials, as well as appropriate design of multilateral structures from mathematical modelling, 4d printing structures evolve as a function of time and exhibit intelligent behavior. Unlike 3D printing, 4D printing is time-dependent, printer-independent, predictable, and targets shape/property/functionality evolution. This allows for self-assembly, multi -functionality and self-repair, which interims helps in easy transportation, reusability, constructions with minimum human involvement, self-adaptability." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sinanthahir.github.io/blogs/shape-shifting-behaviour-4d-materials/" /><meta property="og:image" content="https://sinanthahir.github.io/site-feature-image.png"/><meta property="article:section" content="blogs" />
+<meta property="article:published_time" content="2021-06-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-06-01T00:00:00+00:00" />
+
+
+    
+
+    
+        <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sinanthahir.github.io/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Shape Shifting Behaviour of 4D Printed Materials"/>
+<meta name="twitter:description" content="4D printing is based on 3D printing technology, but requires additional stimulus and stimulus-responsive materials. Based on certain interaction mechanisms between the stimulus and smart materials, as well as appropriate design of multilateral structures from mathematical modelling, 4d printing structures evolve as a function of time and exhibit intelligent behavior. Unlike 3D printing, 4D printing is time-dependent, printer-independent, predictable, and targets shape/property/functionality evolution. This allows for self-assembly, multi -functionality and self-repair, which interims helps in easy transportation, reusability, constructions with minimum human involvement, self-adaptability."/>
+
+    <link rel="stylesheet" href="/css/styles.min.7a1a61a7e69df7aaa60ca4572a6699f3e3751b22d1fd887eda416ab14a9175a618aea8fcf4180c2620f455e7181d55667e6572cdf0807e1bec4138d0228da709.css" integrity="sha512-ehphp+ad96qmDKRXKmaZ8+N1GyLR/Yh+2kFqsUqRdaYYrqj89BgMJiD0VecYHVVmfmVyzfCAfhvsQTjQIo2nCQ==">
+
+
+
+
+
+    
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head><body class="flex flex-col items-center w-full">
+        <main class="w-full sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-5/12 m-auto px-6"><header class="mt-9 mb-8">
+    <div class="flex justify-between items-center">
+        <div class="flex items-center">
+            <input id="navbar_btn" class="hidden" type="checkbox">
+            <label for="navbar_btn" class="menu-btn mr-4 items-center flex xl:hidden">
+                <span class="navicon"></span>
+            </label>
+            <a href="/" class="font-bold text-lg xl:text-2xl mr-auto">Sin(x)</a>
+        </div>
+
+        <div class="flex items-center">
+            <div class="cursor-pointer ml-2">
+                <svg id="dark_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg></svg>
+                <svg id="light_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><g><path d="M14,2c1.82,0,3.53,0.5,5,1.35C16.01,5.08,14,8.3,14,12s2.01,6.92,5,8.65C17.53,21.5,15.82,22,14,22C8.48,22,4,17.52,4,12 S8.48,2,14,2z"/></g></g></g></svg></svg>
+            </div>
+
+            
+
+            
+                <div class="ml-2 sep hidden sm:block"></div>
+                <div class="ml-2 relative flex items-center">
+                    <svg id="search_btn" class="cursor-pointer" width="18px" height="18px" viewBox="2 0 20 20"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></svg><div id="search_menu_wrapper" class="hidden justify-center fixed top-0 left-0 w-full h-full z-40">
+    <div id="search_menu" class="fixed flex flex-col w-full h-full sm:h-auto sm:top-24 sm:bottom-24 rounded-none sm:rounded-md sm:w-120 z-50">
+        <div class="flex min-h-10 shadow-md">
+            <div class="flex flex-grow">
+                <input id="search_menu_input" class="flex-grow focus:outline-none px-4 rounded-tl-md" type="text" placeholder=
+                Search&#32;Posts>
+            </div>
+            <div id="search_menu_close_btn" class="flex items-center justify-center w-10 rounded-tr-md cursor-pointer">
+                <svg width="14px" height="14px" viewBox="3 3 18 18"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></svg>
+            </div>
+        </div>
+        <div id="search_menu_results" class="flex-grow overflow-y-auto">
+        </div>
+    </div>
+</div>
+</div>
+            
+        </div>
+    </div>
+
+    <nav id="navbar" class="mt-3 hidden xl:block"><ul class="flex"><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/about/">About</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium insection">
+                        <a href="/blogs/">Blogs</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/credentials/">Credentials</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/nerd-stuff/">Nerd Stuff</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/notes/">Notes</a>
+                    </li><li class="navbar-item text-sm border-b-2 pb-1 mr-2 font-medium inactive">
+                        <a href="/showcase/">Showcase</a>
+                    </li></ul>
+    </nav>
+
+    <nav id="navbar_sm" class="mt-2 hidden">
+        <ul>
+            
+                <li class="text-sm mt-2">
+                    <a href="/about/">About</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/blogs/">Blogs</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/credentials/">Credentials</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/nerd-stuff/">Nerd Stuff</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/notes/">Notes</a></li>
+            
+                <li class="text-sm mt-2">
+                    <a href="/showcase/">Showcase</a></li>
+            
+        </ul>
+
+        <hr class="my-4">
+    </nav>
+</header>
+<div id="content" class="my-8">
+                
+
+    <div class="my-7">
+<article >
+    <p>We know how the field of manufacturing was revolutionized by the innovation of 3D printing. Though it was invented in 1980s it has popularized recently and has been applied to various field, ranging from biomedical science to space science.</p>
+<p><strong>4D printing</strong> is a recently developed field originating from 3D printing, shows promising capabilities and broad potential applications. 4D printing was initiated and termed by research group at MIT lead by &lsquo;Tibbits&rsquo;(2013). It relies on the fast growth of smart materials, 3D printers, and mathematical modeling and design. 4D printing shows advantages over 3D printing in several aspects. Its application is beyond we can ever think. Its now in its embryonic stage as 3D printing it will take few decades to come into its full potential. Multi-disciplinary researches will aid in its growth.</p>
+<p><img src="4dprintintro.jpg" alt="4dprintintro"></p>
+<h2 id="4d-printing">4D PRINTING</h2>
+<p>It was initially defined as 4D printing = 3D printing + time, where the shape, property, or functionality of a 3D printed structure can change as a function of time. A much more comprehensive definition is, 4D printing is a targeted evolution of the 3D printed structure, in terms of shape, property, and functionality. It is capable of achieving self-assembly, multifunctionality, and self-repair. It is time-dependent, printer-independent, and predictable.</p>
+<h3 id="3d-printing-facility">3D PRINTING FACILITY</h3>
+<p>Usually, a 4D printed structure is created by combining several materials in the appropriate distribution into a single, one-time printed structure. The differences in material properties, such as swelling ratio and thermal expansion coefficient, will lead to the desired shape shifting behaviour. Therefore, 3D printing is necessary for the fabrication of multi-material structures with simple geometry.</p>
+<h3 id="stimulus">STIMULUS</h3>
+<p>Stimulus is required to trigger the alterations of shape/property/functionality of a 4D printed structure. The stimuli that researchers have used in 4D printing thus far include water, heat, a combination of heat and light, and a combination of water and heat. The selection of the stimulus depends on the requirements of the specific application, which also determines the types of smart materials employed in the 4D printed structures.</p>
+<h3 id="stimulus-responsive-material">STIMULUS RESPONSIVE MATERIAL</h3>
+<p>Stimulus-responsive material is one of the most critical components of 4D printing. The capability of this group of materials is defined by the following characteristics: self-sensing, decision making, responsiveness, shape memory, self-adaptability, multi-functionality, and self-repair.</p>
+<h2 id="interaction-mechanism">INTERACTION MECHANISM</h2>
+<p>In some cases, the desired shape of a 4D printed structure is not directly achieved by simply exposing the smart materials to the stimulus. The stimulus needs to be applied in a certain sequence under an appropriate amount of time, which is referred to as the interaction mechanism. For example, one of the main interaction mechanisms is constrained-thermo-mechanics. In this mechanism, the stimulus is heat and the smart material has the shape memory effect. It contains a 4- step cycle. First, the structure is deformed by an external load at a high temperature; second, the temperature is lowered while the external load is maintained; third, the structure is unloaded at the low temperature and the desired shape is achieved; fourth, the original shape can be recovered by reheating the structure.</p>
+<h2 id="shape-shifting-behaviours">Shape Shifting Behaviours</h2>
+<p>The shape shifting behaviours include folding, bending, twisting, linear or nonlinear expansion/ contraction, surface curling, and the generation of surface topographical features such as wrinkles, creases, and buckles.</p>
+<h3 id="shape-changing-vs-shape-memory-materials">SHAPE CHANGING VS. SHAPE MEMORY MATERIALS</h3>
+<p>Shape shifting materials can be divided into two shape changing materials and shape memory materials. A shape changing material changes its shape immediately after a stimulus is applied, and returns to its permanent shape immediately after the stimulus is removed. Whereas shape memory material involves two step cycle, upon application of stimuli material is deformed from its primary shape to metastable temporary shape (programming step), followed by the recovery to primary shape on application of suitable stimuli (recovery step).</p>
+<h3 id="dual-triple-and-multi-shape-memory-effects">DUAL, TRIPLE, AND MULTI SHAPE MEMORY EFFECTS</h3>
+<p>A stimulus responsive shape memory material has the ability to memorize its permanent shape and on subjecting to stimulus deformation occurs between a permanent and temporary shape. A dual-SME material has one permanent shape and one temporary shape, while a triple-SME material has one permanent shape and two temporary shapes. Similarly, a multi (n)-SME material has one permanent shape and (n −1) temporary shapes.</p>
+<p><img src="2-3memory.png" alt="2-3memoryeffects"></p>
+<h3 id="folding-vs-bending">FOLDING VS. BENDING</h3>
+<p>Bending is a global deformation associated with smoother curvatures, while folding is localized deformation that is associated with sharp angles occurring in a narrow hinge area in other words, bending relates to a distributed curvature, whereas folding is more localized.</p>
+<h3 id="surface-topography">SURFACE TOPOGRAPHY</h3>
+<p>It is the representation of local deviation of a surface from a flat plane. Typical features include wrinkling, creasing, and buckling. These features usually occur under compressive loading conditions.</p>
+<p><img src="surfacetopo.jpg" alt="surface"></p>
+<h2 id="shape-shifting-types-and-dimensions">SHAPE-SHIFTING TYPES AND DIMENSIONS</h2>
+<h3 id="1d-to-1d-expansion-or-contraction">1D-to-1D Expansion or Contraction</h3>
+<p>It is also considered to be 4D printed structures since shape shifting occurs overtime. The stimulus is water and the 4D printed structure contains alternating layers of rigid discs and active hydrogels. After the structure is immersed in water, the hydrogel parts will swell while the rigid discs remain the same. By adjusting the ratio of expandable hydrogels to rigid discs, the structure can show linear shape-shifting behaviour with a desirable final length.</p>
+<h3 id="1d-to-2d-folding">1D-to-2D Folding</h3>
+<p>There are two types of materials involved in the structure: rigid and active. The active material is a hydrogel that can swell when immersed in water while the rigid parts remain intact. This difference provides a stress mismatch and enables the overall shape to be changed toward a specific direction. The position and volume of the active and rigid materials in the structure can be designed to achieve different shape-shifting directions.</p>
+<h3 id="1d-to-3d-folding">1D-to-3D Folding</h3>
+<p>The structure contains the same two materials described above. This is an illustration of 1Dto3D shape-shifting by self-folding mechanism. For each wireframe hinge, two rigid discs are embedded in the hydrogel part, which connects the two rigid strands. This is shown in Figure below. These two rigid discs can limit the maximum degree of free shape-shifting.</p>
+<p><img src="1d-2d-3d.jpg" alt="shiftnature"></p>
+<h3 id="2d-to-2d-bending">2D-to-2D Bending</h3>
+<p>2D-to-2D self-bending in a 4D bio-printed networks of droplets. As shown in Fig a rectangular network could be bent into a circle. This shape-shifting behaviour is based on the differences in osmolarity of the droplets. The droplets with higher osmolarity swell and the droplets with lower osmolarity shrink. The shape continues to change until the osmolarity gradient becomes zero.</p>
+<p><img src="2d-2d.png" alt="2d-2d"></p>
+<h3 id="2d-to-3d-bending">2D-to-3D Bending</h3>
+<p>A complex structure was created by tearing paper off of the flowerlike 3D structure. Heat is the stimulus in this shape-shifting behaviour. However, their experiment is different from the regular shape memory cycles with programming and recovery steps. In this mechanism, there is no need to apply external force at a high temperature and cool down to a low temperature while maintaining the previously applied force. The shape-shifting behaviour is enabled by different thermal expansion coefficients of the active and non-active materials.</p>
+<p><img src="flwrstr.jpg" alt="flwr"></p>
+<h3 id="3d-folding">3D Folding</h3>
+<p>2D-to-3D shape-shifting behaviour based on self-folding. This shape-shifting behaviour is enabled by a stress mismatch between rigid and active materials due to their different swelling behaviours under water.</p>
+<h3 id="2d-to-3d-twisting">2D-to-3D Twisting</h3>
+<p>Here the fibers printed with certain angles to induce twisting, and by adjusting the print angles of active fibers, the final twist angle would be changed.</p>
+<h3 id="2d-to-3d-bending-and-twisting">2D-to-3D Bending and Twisting</h3>
+<p>This is produced by the biomimetic 4D printing process shown in. This shape shifting behaviour is caused by the differences in the swelling ratios of active and rigid materials under water.</p>
+<h3 id="3d-to-3d-bending">3D-to-3D Bending</h3>
+<p>This shape-shifting behaviour is triggered by dissolution of an appropriate material into a suitable solvent, which will be further discussed in the section discussing shape-shifting mechanisms and stimuli.</p>
+<p>3D-to-3D self-bending shape-shifting behaviour in a prosthetic finger made from thermoplastic elastomer (TPE).</p>
+<p><img src="flwrmorpho.png" alt="flwr"></p>
+<h2 id="material-structures">Material Structures</h2>
+<p>The materials used in 4D printing are mainly classified into smart materials and conventional (nonsmart) material. In additive manufacturing, structures are divided into single-material and multimaterial structures. Further multi-material structures are classified into discrete multiple materials, composite materials, and porous materials. Another set of classification of multi material structure include uniform distribution, gradient distribution, and special patterns. Also, material structures can be classified as a structure with or without joints and hinges.</p>
+<h3 id="multi-material-structures">MULTI-MATERIAL STRUCTURES</h3>
+<p>In 4D printing, multiple materials usually need to be inserted into a single and one-time printed structure. This multi-material structure can be a mixture of different smart materials or a combination of smart materials and conventional materials. The single-material structure in 4D printing should always be fabricated with a smart material. In addition, it needs to be based on the structure with a gradient distribution of materials. The gradient distribution of a single material means that the density of the structure is different at various locations. This anisotropy can generate shape-shifting behaviours such as bending and twisting, which is beyond linear expansion and contraction.</p>
+<h3 id="digital-materials">DIGITAL MATERIALS</h3>
+<p>In nature, biological structures usually consist of fundamental building blocks that can be considered physical voxels, such as DNA and proteins. Physical 3D object is made of many digital units (voxels) arranged selectively in a 3D lattice, as opposed to analog (continuous) material commonly used in conventional. Digital material is defined as an assembly of various physical voxels. The spatial arrangement of voxels plays a major role in determining the features of a 4D-printed structure. In digital materials, each voxel contains only one material. Adjacent voxels can be composed of different materials. Each voxel has its own properties and the collection of different voxels results in the multi-material structure.</p>
+<p><img src="mmp.jpg" alt="mmp"></p>
+<h3 id="multi-material-additive-manufacturing-system">MULTI-MATERIAL ADDITIVE MANUFACTURING SYSTEM</h3>
+<p>To model the material structure in various length and time scales for digital materials, Myres (1999) developed a software called the Digital Material. Popescu (2006) proposed a new manufacturing process for digital materials that is reversible for disassembly and can reuse the building blocks of the structure. Huang (2016) demonstrated an approach for ultrafast printing of shape-shifting materials. Zhou (2013)reported that there are several limitations to the current 3D additive manufacturing process. For example, printers with inkjet nozzles can only print materials with certain viscosities and curing temperatures. The fused deposition modeling (FDM) process is relatively slow and has limited options for its minimum nozzle size. Zhou investigated several new techniques for digital material production using mask- imageprojection-based stereolithography. Ge (2016) provided an approach for printing multimaterial shape memory polymers (SMPs) with a high resolution (up to a few microns). This approach is enabled by a high-resolution projection microstereolithography (PμSL) additive manufacturing system with an automated material exchange mechanism. In order to enable 4D printing for biomedical applications, multi-material additive manufacturing systems that can print from aqueous mediums needs to be developed (Loh, 2016). In this regard, the direct-write (DW) printing technique (Lewis, Gratson &amp; Lewis, Lebel), which is suitable for printing polymeric solutions, can be engaged.</p>
+<p><img src="aadt.png" alt="aadt"></p>
+<p><strong>4D printing</strong> is the one of emerging technology which has a vast potential for growth. It will revolutionize most of the fields especially manufacturing industry, the stimulus responsive programming of these products will give a new horizon to packing and transportation sectors. The scope of assembling a product at required locations will be a huge step up.</p>
+<p>Also, it will provide extensive support in the medical field with better accuracy the manufacturing of customized smart implants, tools and devices. organ printing, tissue engineering and selfassembling human scale biomaterials. It creates a development of biomedical splint, stents, bioprinting and orthodontics devices as per human growth. In the future, this emerging technology will become more beneficial and help to create
+endless possibilities in the medical field.</p>
+<p><strong>4D printing</strong> has three main capabilities: self-assembly, multi-functionality, and self-repair; so, its application level is beyond imaginable, but the factors lacking are mainly availability of materials and a large amount of multidisciplinary research needs to be conducted in the future.</p>
+
+</article>
+</div>
+
+
+                
+                    <div class="my-8 sm:-mx-5">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sinx-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+                
+            </div>
+<footer class="my-8 w-full text-center text-xs">
+    <article>Sinan Thahir © 2022</article>
+</footer>
+
+</main>
+<script src="/js/header.0b11855b871cb4d10c6c07b6723b9209f5c2bc9100735ab6ff47c8f9b76bb3d6ae41b488083b5fb15697987334039eb651b25c83228c29ac48a2bc168db8a894.js" integrity="sha512-CxGFW4cctNEMbAe2cjuSCfXCvJEAc1q2/0fI&#43;bdrs9auQbSICDtfsVaXmHM0A562UbJcgyKMKaxIorwWjbiolA=="></script>
+
+
+
+    <script src="/js/zooming.6465dea09c944f54e6047dd74be6d405f3f2d8dfef550bcc6b7c95bf49b0f3f51315c9c7bd4fe7cbce37f40205ccf2aa3a306ebb59f98208e92b91dfafb496e7.js" integrity="sha512-ZGXeoJyUT1TmBH3XS&#43;bUBfPy2N/vVQvMa3yVv0mw8/UTFcnHvU/ny8439AIFzPKqOjBuu1n5ggjpK5Hfr7SW5w=="></script>
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    <script src="/js/search-en-us.min.1a0c7b6bac73d6cea79c3744ec1241b1daa399a1c377f1938b810e5575d253f795ed74ff374f3519052b1702f39ad0e7ddbdc5e0401b5ed761b0c18e8c7b044e.js" integrity="sha512-Ggx7a6xz1s6nnDdE7BJBsdqjmaHDd/GTi4EOVXXSU/eV7XT/N081GQUrFwLzmtDn3b3F4EAbXtdhsMGOjHsETg=="></script>
+
+
+
+
+</body>
+</html>
