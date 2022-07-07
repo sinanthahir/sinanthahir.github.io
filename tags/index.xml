@@ -6,43 +6,7 @@
     <description>Recent content in Tags on Sin(x)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Business Analysis</title>
-      <link>https://sinanthahir.github.io/tags/business-analysis/</link>
-      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://sinanthahir.github.io/tags/business-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Business Metrics</title>
-      <link>https://sinanthahir.github.io/tags/business-metrics/</link>
-      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://sinanthahir.github.io/tags/business-metrics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Statistics</title>
-      <link>https://sinanthahir.github.io/tags/statistics/</link>
-      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://sinanthahir.github.io/tags/statistics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Visualization</title>
-      <link>https://sinanthahir.github.io/tags/visualization/</link>
-      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://sinanthahir.github.io/tags/visualization/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 04 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analytics</title>
       <link>https://sinanthahir.github.io/tags/analytics/</link>
@@ -112,6 +76,24 @@
       <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sinanthahir.github.io/tags/matlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>https://sinanthahir.github.io/tags/statistics/</link>
+      <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>https://sinanthahir.github.io/tags/visualization/</link>
+      <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sinanthahir.github.io/tags/visualization/</guid>
       <description></description>
     </item>
     

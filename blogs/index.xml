@@ -6,72 +6,7 @@
     <description>Recent content in Blogs on Sin(x)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>What are metrics and how to choose one?</title>
-      <link>https://sinanthahir.github.io/blogs/what-are-metrics-and-how-to-choose-one/</link>
-      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://sinanthahir.github.io/blogs/what-are-metrics-and-how-to-choose-one/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;metricscvr.jpg&#34; alt=&#34;metricscvr&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Be The Unicorn Business Analyst&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;what-are-metrics-and-how-to-chooseone&#34;&gt;What are Metrics and How to choose one?&lt;/h2&gt;
-&lt;h4 id=&#34;understanding-and-identifying-relevant-businessmetrics&#34;&gt;Understanding and identifying relevant business metrics.&lt;/h4&gt;
-&lt;p&gt;Technology is constantly evolving, but the technology of 2022 is still a mystery to many. There are a few trends that we can expect to see in the end of 2022. Artificial Intelligence, Robotics and other form of Automation will be a major part of the future and will play an important role in how businesses operate and interact with their customers. Advances in technology will continue to occur and will transform the way business is done. In 2022, we can expect to see intelligence being embedded into everyday objects, interactive displays showing more real-time data than ever before.&lt;/p&gt;
-
-
-
-
-
-
-    
-    
-
-
-&lt;div class=&#34;rounded p-3 my-6&#34; style=&#34;background-color: #d9edf7; color: #31708f;&#34; &gt;
-    
-So, who can drive insights from these real time data to enhance there business ?
-
-&lt;/div&gt;
-
-&lt;h3 id=&#34;a-businessanalyst&#34;&gt;A Business Analyst&lt;/h3&gt;
-&lt;p&gt;A &lt;strong&gt;Business Analyst&lt;/strong&gt; is a person who helps businesses to analyze their processes, products, services, and systems to improve current processes and make profitable decisions through insights and data analysis. A Business analyst also helps organizations to document business processes by assessing the business model and its integration with technology.&lt;/p&gt;
-&lt;p&gt;Some people think that the role of Business Analyst is to make money for the organization, which may not be true in direct context. But indirectly, the action and decision taken by Business Analysts do leave an impact on the financial prospects of the organization.&lt;/p&gt;
-&lt;p&gt;The well-known expression, &amp;ldquo;&lt;strong&gt;if you can&amp;rsquo;t measure it, you can&amp;rsquo;t improve it&lt;/strong&gt;&amp;rdquo; is anything but trifling. A change in business process managed can only become great and valuable if quality and performance are effectively measured. &lt;strong&gt;How do a Business Analyst measure process&amp;rsquo;s performance? How do a Business Analyst map a process&amp;rsquo;s performance to business success?&lt;/strong&gt;&lt;/p&gt;
-
-
-
-
-
-
-    
-    
-
-
-&lt;div class=&#34;rounded p-3 my-6&#34; style=&#34;background-color: #d9edf7; color: #31708f;&#34; &gt;
-    
-After you&#39;ve read this article, you will be able to find the treasure in that ocean to identify and utilize the business metrics that allow data driven companies to thrive.
-
-&lt;/div&gt;
-
-&lt;h2 id=&#34;business-metrices&#34;&gt;Business Metrices&lt;/h2&gt;
-&lt;p&gt;A &lt;strong&gt;Business Metric&lt;/strong&gt; is a quantifiable measure businesses use to track, monitor and assess the success or failure of various &lt;a href=&#34;https://kissflow.com/workflow/bpm/business-process/&#34;&gt;business processes&lt;/a&gt;, or we can say that; &lt;strong&gt;Business Metrics&lt;/strong&gt; are used to drive improvements and help businesses focus their people and resources on what&amp;rsquo;s important.&lt;/p&gt;
-&lt;p&gt;Both of them are true, for the least we can tell that; &lt;strong&gt;Business Metrices&lt;/strong&gt; are numbers that can impact when we change our business process. The main goal of measuring business metrics is to track cost management, but the overall point of employing them is to communicate a company&amp;rsquo;s progression toward certain long- and short-term objectives.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;For example; you are running a retail clothing store rooted in the state of Dallas, Texas. Where we have a 8.25% sales tax, the sales tax is not a metric. There&amp;rsquo;s nothing that we can do to change it. On the Other hand, you are running a online shopping site with it; the percentage of people who viewed your ad on a particular website. Then used it as call to action to your homepage. Can change every time the ad contents change. Or when the time of day changes, where we run the ad, on what websites it appears etc. The people who viewed your ads, visited your website through these ads…, all these are quantitative and can drive insights on your process.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Overall, metrics should reflect and support the various strategies for all aspects of the organization, like marketing, customer acquisition, service offerings, etc. Metrics indicate the priorities of the company and provide a window on performance, ethos and ambition.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;datalake.jpeg&#34; alt=&#34;datalake&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;the-world-appears-to-be-flooded-with-an-ocean-of-data-but-much-of-it-not-souseful&#34;&gt;The world appears to be flooded with an ocean of data, but much of it not so useful.&lt;/h3&gt;
-&lt;p&gt;The same goes with the business metric&amp;rsquo;s too, flooded with a lot data. To define a metric is similar to that of finding a jewel in the deep ocean  - if you have to spend too much time finding it then you&amp;rsquo;ll sink. Employees need to understand the metrics, how they can influence it and what is expected of them. Like Metrics, there are &lt;a href=&#34;https://www.klipfolio.com/resources/articles/what-is-a-key-performance-indicator&#34;&gt;Key Performance Indicators&lt;/a&gt; (KPIs); a measurable quantitative. Lets keep KPIs for another day.&lt;/p&gt;
-&lt;p&gt;To make the most use of business metrices, To be the unicorn business analyst, you must be familiar and able to know, what and when we business metrics are used. So here, I&amp;rsquo;m going to get you know about some of them with suitable scenario cases. Business Metrics can be broadly classified into - &lt;strong&gt;Revenue&lt;/strong&gt;, &lt;strong&gt;Profitability&lt;/strong&gt; and &lt;strong&gt;Risk&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;busdiv.png&#34; alt=&#34;busdiv&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;revenue-metrics&#34;&gt;Revenue Metrics&lt;/h3&gt;
-&lt;p&gt;These metrics are outward facing and always refer to sales and marketing - means directly to your revenue. They tells us about how well or badly the company is marketing the products and sales are done.&lt;/p&gt;
-&lt;p&gt;If the Company&amp;rsquo;s VP of the salesforce, wants to know how well many units of each commodity is sold over a given time interval or&lt;/p&gt;
-</description>
-    </item>
-    
+    <lastBuildDate>Thu, 04 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sinanthahir.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Machine Learning for Recognizing Handwritten Digits</title>
       <link>https://sinanthahir.github.io/blogs/recognizing-handwritten-digits/</link>

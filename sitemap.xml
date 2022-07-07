@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sinanthahir.github.io/</loc>
-    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/showcase/spacex/</loc>
   </url><url>
@@ -15,28 +15,10 @@
   </url><url>
     <loc>https://sinanthahir.github.io/showcase/branding-and-promotional/</loc>
   </url><url>
-    <loc>https://sinanthahir.github.io/blogs/</loc>
-    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinanthahir.github.io/tags/business-analysis/</loc>
-    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinanthahir.github.io/tags/business-metrics/</loc>
-    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinanthahir.github.io/tags/statistics/</loc>
-    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinanthahir.github.io/tags/</loc>
-    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinanthahir.github.io/tags/visualization/</loc>
-    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinanthahir.github.io/blogs/what-are-metrics-and-how-to-choose-one/</loc>
-    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sinanthahir.github.io/tags/analytics/</loc>
+    <lastmod>2021-11-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/blogs/</loc>
     <lastmod>2021-11-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/tags/case-studies/</loc>
@@ -54,6 +36,9 @@
     <loc>https://sinanthahir.github.io/tags/scikit-learn/</loc>
     <lastmod>2021-11-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://sinanthahir.github.io/tags/</loc>
+    <lastmod>2021-11-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sinanthahir.github.io/tags/eda/</loc>
     <lastmod>2021-11-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -67,6 +52,12 @@
     <lastmod>2021-08-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/blogs/matlab-cheatsheet-simulation/</loc>
+    <lastmod>2021-08-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/tags/statistics/</loc>
+    <lastmod>2021-08-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/tags/visualization/</loc>
     <lastmod>2021-08-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/tags/additive-manufacturing/</loc>
@@ -84,10 +75,13 @@
     <loc>https://sinanthahir.github.io/tags/sustainable-material-studies/</loc>
     <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinanthahir.github.io/notes/is-it-okay-to-show-your-flaws/</loc>
-    <lastmod>2020-09-25T00:00:00+00:00</lastmod>
+    <loc>https://sinanthahir.github.io/notes/better-decision-bitter-opinions/</loc>
+    <lastmod>2020-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/notes/</loc>
+    <lastmod>2020-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinanthahir.github.io/notes/is-it-okay-to-show-your-flaws/</loc>
     <lastmod>2020-09-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinanthahir.github.io/notes/writebook/</loc>
